@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Little Pampanga Philippine Cuisine | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--blue:#0b3a8f;--navy:#0a2559;--red:#ce1126;--sun:#f6c514;--pearl:#fbf8f2;--capiz:#efe8da}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--pearl);color:#1b2240;line-height:1.65}
+.demo{background:var(--navy);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:var(--sun)}
+.stripe{height:6px;background:linear-gradient(90deg,var(--blue) 0 50%,var(--red) 50% 100%)}
+h1,h2,h3{font-family:"Playfair Display",Georgia,serif}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%}
+.logo{font-family:"Playfair Display",serif;font-weight:900;font-size:1.3rem;color:var(--navy)}
+.logo b{color:var(--red)}
+nav a{color:var(--blue);font-weight:700;text-decoration:none}
+.hero{position:relative;overflow:hidden;padding:4rem 6% 5rem;display:grid;grid-template-columns:1.2fr .8fr;gap:2rem;align-items:center;
+background:
+radial-gradient(circle at 20px 20px,rgba(255,255,255,.9) 0 13px,transparent 14px) 0 0/40px 40px,
+radial-gradient(circle at 20px 20px,var(--capiz) 0 18px,transparent 19px) 0 0/40px 40px,#f6f0e3}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--pearl) 35%,rgba(251,248,242,.6) 70%,rgba(251,248,242,.2));pointer-events:none}
+.hero>*{position:relative;z-index:1}
+.badge{display:inline-flex;gap:.5rem;align-items:center;background:var(--navy);color:#fff;padding:.4rem 1rem;border-radius:99px;font-size:.8rem;letter-spacing:.08em;text-transform:uppercase}
+.badge span{color:var(--sun)}
+h1{font-size:clamp(2.6rem,6.5vw,4.8rem);font-weight:900;line-height:1.02;color:var(--navy);margin:1rem 0}
+h1 em{color:var(--red);font-style:italic}
+.lead{font-size:1.15rem;max-width:38ch;color:#38406a}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+.btn{padding:.95rem 1.6rem;border-radius:10px;font-weight:700;text-decoration:none}
+.btn.p{background:var(--red);color:#fff;box-shadow:0 10px 24px rgba(206,17,38,.25)}
+.btn.s{background:var(--blue);color:#fff}
+.meta{margin-top:1.3rem;color:#5a6188;font-size:.95rem}
+.parol{width:100%;max-width:300px;justify-self:center;filter:drop-shadow(0 18px 30px rgba(10,37,89,.25));animation:sway 6s ease-in-out infinite;transform-origin:50% 0}
+@keyframes sway{0%,100%{transform:rotate(-3deg)}50%{transform:rotate(3deg)}}
+.pride{background:var(--navy);color:#fff;text-align:center;padding:4rem 6%;position:relative}
+.pride h2{font-size:clamp(1.8rem,4.2vw,3rem)}
+.pride h2 em{color:var(--sun)}
+.pride p{max-width:60ch;margin:.8rem auto 0;color:#c9d3ef}
+.sunrays{font-size:2.4rem;color:var(--sun)}
+section{padding:5rem 6%}
+h2{color:var(--navy)}
+.sec-h{font-size:clamp(1.9rem,4vw,2.8rem)}
+.sub{color:#5a6188;margin:.3rem 0 2.4rem}
+.board{background:#123a2b;border:12px solid #6b4a2b;border-radius:14px;padding:2.4rem;color:#f4f1e6;box-shadow:inset 0 0 40px rgba(0,0,0,.4),0 20px 40px rgba(0,0,0,.15);max-width:900px}
+.board h3{font-family:"Playfair Display",serif;font-size:1.8rem;color:var(--sun);margin-bottom:1rem}
+.board ul{list-style:none;display:grid;gap:.9rem}
+.board li{display:flex;gap:.8rem;align-items:baseline;border-bottom:1px dashed rgba(255,255,255,.25);padding-bottom:.7rem;font-size:1.05rem}
+.board .chalk{margin-top:1.4rem;color:#c8d6cf;font-style:italic}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;margin-top:2.4rem}
+.card{background:#fff;border-radius:16px;padding:1.6rem;border-left:5px solid var(--blue);box-shadow:0 8px 24px rgba(10,37,89,.07)}
+.card:nth-child(2){border-color:var(--red)}.card:nth-child(3){border-color:var(--sun)}
+.card h3{color:var(--navy);font-size:1.25rem;margin:.4rem 0}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border-radius:18px;padding:2rem;box-shadow:0 8px 24px rgba(10,37,89,.07)}
+.box h3{color:var(--navy);font-size:1.5rem;margin-bottom:.6rem}
+.box a{color:var(--blue);font-weight:700}
+form{display:grid;gap:.75rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #dcdfe9;border-radius:10px;width:100%}
+button{font:inherit;font-weight:700;background:var(--navy);color:#fff;border:0;padding:.9rem;border-radius:10px;opacity:.75;cursor:not-allowed}
+small{color:#7a80a0}
+footer{background:var(--navy);color:#b7c2e4;text-align:center;padding:2rem 6%;font-size:.85rem}
+@media(max-width:780px){.hero{grid-template-columns:1fr}.parol{max-width:180px;grid-row:1}.hero::after{background:rgba(251,248,242,.75)}}
+@media(prefers-reduced-motion:reduce){.parol{animation:none}}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Little Pampanga Philippine Cuisine. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<div class="stripe"></div>
+<nav><span class="logo">Little <b>Pampanga</b></span><a href="tel:+17024350392">📞 (702) 435-0392</a></nav>
+<header class="hero">
+  <div>
+    <span class="badge"><span>★</span> Philippine cuisine · Las Vegas</span>
+    <h1>A taste of the <em>Culinary Capital</em> of the Philippines.</h1>
+    <p class="lead">Kapampangan-inspired home cooking, turo-turo style. Point, pick, and take a little of Pampanga home.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:+17024350392">📞 Call ahead</a>
+      <a class="btn s" href="https://www.google.com/maps/search/?api=1&query=Little%20Pampanga%20Philippine%20Cuisine%206325%20E%20Russell%20Rd%2C%20Las%20Vegas%2C%20NV%2089122" target="_blank" rel="noopener">📍 Directions</a>
+    </div>
+    <p class="meta">⭐ 4.4 on Google · 190+ reviews</p>
+  </div>
+  <svg class="parol" viewBox="0 0 200 300" aria-hidden="true">
+    <line x1="100" y1="0" x2="100" y2="40" stroke="#6b4a2b" stroke-width="3"/>
+    <polygon points="100,40 118,88 170,88 128,118 144,168 100,138 56,168 72,118 30,88 82,88" fill="#ce1126" stroke="#f6c514" stroke-width="4"/>
+    <polygon points="100,62 110,90 140,90 116,108 125,138 100,120 75,138 84,108 60,90 90,90" fill="#f6c514"/>
+    <circle cx="100" cy="104" r="16" fill="#0b3a8f" stroke="#fff" stroke-width="3"/>
+    <path d="M60,160 Q50,230 40,280 M80,165 Q78,230 72,290 M120,165 Q122,230 128,290 M140,160 Q150,230 160,280" stroke="#f6c514" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <path d="M70,165 Q66,220 58,262 M130,165 Q134,220 142,262" stroke="#0b3a8f" stroke-width="4" fill="none" stroke-linecap="round"/>
+  </svg>
+</header>
+
+<div class="pride">
+  <div class="sunrays">☀️</div>
+  <h2>Proudly <em>Kapampangan</em></h2>
+  <p>Pampanga is known across the Philippines as its culinary capital. We bring that regional pride to the east side of Las Vegas, one tray at a time.</p>
+</div>
+
+<section id="today">
+  <h2 class="sec-h">Today's board</h2>
+  <p class="sub">Turo-turo means "point-point." See it, point to it, it's yours.</p>
+  <div class="board">
+    <h3>✏️ Daily dishes</h3>
+    <ul>
+      <li>🍲 Daily dishes, cooked fresh, come early</li>
+      <li>🍚 Rice plates and combos to go</li>
+      <li>🥡 Takeout trays for the family</li>
+      <li>🎉 Catering for parties and gatherings</li>
+    </ul>
+    <p class="chalk">Popular dishes sell out. Call ahead to check today's line-up. Full menu and hours coming soon.</p>
+  </div>
+  <div class="cards">
+    <div class="card"><div>📞</div><h3>Call-ahead orders</h3><p>Call before you come so your favorites are waiting.</p></div>
+    <div class="card"><div>🥡</div><h3>Takeout made easy</h3><p>Turo-turo counter service, quick and filling.</p></div>
+    <div class="card"><div>🎊</div><h3>Catering</h3><p>Kapampangan flavors for your next fiesta or office lunch.</p></div>
+  </div>
+</section>
+
+<section id="visit" style="background:#f3eee3">
+  <div class="visit">
+    <div class="box"><h3>📍 Find us</h3>
+      <p>6325 E Russell Rd<br>Las Vegas, NV 89122</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Little%20Pampanga%20Philippine%20Cuisine%206325%20E%20Russell%20Rd%2C%20Las%20Vegas%2C%20NV%2089122" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+      <p><a href="tel:+17024350392">(702) 435-0392</a></p><br>
+      <p>Hours: coming soon</p></div>
+    <div class="box"><h3>💬 Message us</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Your name" disabled>
+        <input placeholder="Phone" disabled>
+        <textarea rows="3" placeholder="Catering or a call-ahead question" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only. This form doesn't submit anywhere yet.</small>
+      </form></div>
+  </div>
+</section>
+<div class="stripe"></div>
+<footer>Little Pampanga Philippine Cuisine · 6325 E Russell Rd, Las Vegas, NV 89122 · (702) 435-0392<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

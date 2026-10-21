@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Mang Felix Kitchen Bar and Cafe | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,600;0,700;1,500&family=Caveat:wght@600&family=Work+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--wood:#6b4226;--wood-d:#3f2615;--wood-l:#a8693b;--honey:#f2b45a;--glow:#ffd99a;--linen:#f8efe2;--ink:#2e1e13}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Work Sans",system-ui,sans-serif;background:var(--linen);color:var(--ink);line-height:1.65}
+.demo{background:var(--wood-d);color:#f3dfc4;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:var(--honey)}
+h1,h2,h3{font-family:Lora,Georgia,serif}
+.script{font-family:Caveat,cursive;color:var(--honey);font-size:1.6rem}
+.hero{position:relative;min-height:90vh;display:flex;flex-direction:column;justify-content:center;padding:6rem 6% 5rem;color:#fff6ea;overflow:hidden;
+background:
+radial-gradient(ellipse 60% 40% at 50% 10%,rgba(255,200,120,.35),transparent 70%),
+repeating-linear-gradient(90deg,rgba(0,0,0,.18) 0 2px,transparent 2px 120px),
+repeating-linear-gradient(90deg,#7a4b2a 0 30px,#6e4325 30px 55px,#80502d 55px 90px,#6b4226 90px 120px)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(40,22,10,.25),rgba(40,22,10,.75))}
+.lights{position:absolute;top:0;left:0;right:0;height:120px;z-index:1}
+.bulb{position:absolute;top:0;width:2px;background:#2a1a0e}
+.bulb::after{content:"";position:absolute;bottom:-22px;left:-10px;width:22px;height:28px;border-radius:50% 50% 45% 45%;background:radial-gradient(circle at 50% 40%,#fff8e0,var(--glow) 45%,#e89a3a);box-shadow:0 0 30px 10px rgba(255,200,110,.45)}
+.b1{left:12%;height:40px}.b2{left:32%;height:70px}.b3{left:52%;height:46px}.b4{left:72%;height:76px}.b5{left:90%;height:50px}
+nav{position:absolute;top:0;left:0;right:0;display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;z-index:3}
+.logo{font-family:Lora,serif;font-weight:700;font-size:1.25rem;color:#fff6ea;background:rgba(40,22,10,.55);padding:.3rem .8rem;border-radius:8px}
+nav a{color:var(--glow);text-decoration:none;font-weight:600;background:rgba(40,22,10,.55);padding:.4rem .9rem;border-radius:8px}
+.hero-inner{position:relative;z-index:2;max-width:680px;margin-top:2rem}
+h1{font-size:clamp(2.6rem,7vw,4.8rem);line-height:1.05;margin:.3rem 0 1rem;text-shadow:0 4px 24px rgba(0,0,0,.35)}
+.lead{font-size:1.15rem;max-width:40ch;color:#f3dfc4}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+.btn{padding:.95rem 1.6rem;border-radius:12px;font-weight:600;text-decoration:none}
+.btn.p{background:var(--honey);color:var(--wood-d);box-shadow:0 0 28px rgba(242,180,90,.5)}
+.btn.s{border:2px solid var(--glow);color:var(--glow)}
+.meta{margin-top:1.3rem;color:#e9cfa8;font-size:.95rem}
+section{padding:5rem 6%}
+.sec-h{font-size:clamp(1.9rem,4vw,2.8rem);color:var(--wood-d)}
+.sub{color:#7a5a43;margin:.3rem 0 2.4rem;max-width:56ch}
+.menu{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:1.4rem}
+.card{background:#fff;border-radius:18px;padding:1.8rem;box-shadow:0 10px 28px rgba(63,38,21,.08);border:1px solid #efdcc2}
+.card .ic{width:56px;height:56px;border-radius:14px;display:grid;place-items:center;font-size:1.7rem;background:linear-gradient(135deg,#f7dcb0,#eebd78)}
+.card h3{color:var(--wood);font-size:1.3rem;margin:.9rem 0 .3rem}
+.soon{margin-top:1.8rem;color:var(--wood-l);font-style:italic}
+.nights{background:radial-gradient(ellipse at 50% 0,rgba(255,190,100,.25),transparent 60%),linear-gradient(160deg,#3f2615,#24150b);color:#f3dfc4;text-align:center}
+.nights .sec-h{color:#fff6ea}
+.nights .sub{color:#d8bd98;margin-left:auto;margin-right:auto}
+.stage{display:flex;justify-content:center;gap:2rem;flex-wrap:wrap;margin:2rem 0}
+.pill{background:rgba(255,217,154,.1);border:1px solid rgba(255,217,154,.35);border-radius:20px;padding:1.6rem 2rem;min-width:220px}
+.pill .em{font-size:2.6rem}
+.pill h3{color:var(--glow);font-size:1.4rem;margin:.4rem 0 .2rem}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border-radius:18px;padding:2rem;border:1px solid #efdcc2}
+.box h3{color:var(--wood);font-size:1.5rem;margin-bottom:.6rem}
+.box a{color:var(--wood-l);font-weight:600}
+form{display:grid;gap:.75rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #ead6b9;border-radius:12px;background:var(--linen);width:100%}
+button{font:inherit;font-weight:600;background:var(--wood);color:#fff;border:0;padding:.9rem;border-radius:12px;opacity:.75;cursor:not-allowed}
+small{color:#9a7a60}
+footer{background:var(--wood-d);color:#d8bd98;text-align:center;padding:2rem 6%;font-size:.85rem}
+@media(max-width:600px){.b2,.b4{display:none}.logo{font-size:1rem}}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Mang Felix Kitchen Bar and Cafe. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<header class="hero">
+  <div class="lights" aria-hidden="true"><span class="bulb b1"></span><span class="bulb b2"></span><span class="bulb b3"></span><span class="bulb b4"></span><span class="bulb b5"></span></div>
+  <nav><span class="logo">Mang Felix</span><a href="tel:+17022270128">📞 Call</a></nav>
+  <div class="hero-inner">
+    <p class="script">Tuloy po kayo, come on in</p>
+    <h1>Mang Felix Kitchen Bar &amp; Cafe</h1>
+    <p class="lead">Your neighborhood Filipino kitchen in Filipino Town. Home-style food, good company, and a mic waiting for you.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:+17022270128">📞 (702) 227-0128</a>
+      <a class="btn s" href="https://www.google.com/maps/search/?api=1&query=Mang%20Felix%20Kitchen%20Bar%20and%20Cafe%203528%20S%20Maryland%20Pkwy%20%23100%2C%20Las%20Vegas%2C%20NV%2089169" target="_blank" rel="noopener">📍 Get directions</a>
+    </div>
+    <p class="meta">⭐ 4.1 on Google · 3528 S Maryland Pkwy #100</p>
+  </div>
+</header>
+
+<section id="menu">
+  <h2 class="sec-h">From our kitchen</h2>
+  <p class="sub">Cozy, unhurried, and made like it's for family. Because it is.</p>
+  <div class="menu">
+    <div class="card"><div class="ic">🍲</div><h3>Filipino home cooking</h3><p>Comfort food from the Filipino home kitchen.</p></div>
+    <div class="card"><div class="ic">☕</div><h3>Cafe</h3><p>Slow down with a cup and stay a while.</p></div>
+    <div class="card"><div class="ic">🍻</div><h3>Bar &amp; specials</h3><p>Drinks with friends after a long day.</p></div>
+    <div class="card"><div class="ic">👨‍👩‍👧‍👦</div><h3>Big-group gatherings</h3><p>Bring the whole barkada. Call ahead for large parties.</p></div>
+  </div>
+  <p class="soon">Menu, bar specials and hours coming soon.</p>
+</section>
+
+<section class="nights" id="nights">
+  <p class="script">After dinner, the fun starts</p>
+  <h2 class="sec-h">Karaoke &amp; live music nights</h2>
+  <p class="sub">Grab the mic, cheer on your friends, or just sit back and enjoy the music.</p>
+  <div class="stage">
+    <div class="pill"><div class="em">🎤</div><h3>Karaoke nights</h3><p>Sing your heart out.</p></div>
+    <div class="pill"><div class="em">🎸</div><h3>Live music</h3><p>Local sounds, warm vibes.</p></div>
+  </div>
+  <p style="color:#d8bd98">Event calendar coming soon. Call to ask what's on this week.</p><br>
+  <a class="btn p" href="tel:+17022270128">📞 Ask about tonight</a>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Visit us</h3>
+      <p>3528 S Maryland Pkwy #100<br>Las Vegas, NV 89169<br>(Filipino Town)</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Mang%20Felix%20Kitchen%20Bar%20and%20Cafe%203528%20S%20Maryland%20Pkwy%20%23100%2C%20Las%20Vegas%2C%20NV%2089169" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+      <p><a href="tel:+17022270128">(702) 227-0128</a></p><br>
+      <p>Hours: coming soon</p></div>
+    <div class="box"><h3>✉️ Message us</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Your name" disabled>
+        <input placeholder="Phone" disabled>
+        <textarea rows="3" placeholder="Large party, event night, or a question" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only. This form doesn't submit anywhere yet.</small>
+      </form></div>
+  </div>
+</section>
+<footer>Mang Felix Kitchen Bar and Cafe · 3528 S Maryland Pkwy #100, Las Vegas, NV 89169 · (702) 227-0128<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

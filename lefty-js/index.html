@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Lefty-J's Island Favorites | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--sun:#ff7a3d;--hib:#e83f7a;--teal:#0fa3a3;--deep:#0b4f5c;--sand:#fff6ea}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Poppins,system-ui,sans-serif;color:#1d2b30;background:var(--sand);line-height:1.6}
+a{color:inherit}
+.demo{background:#1d2b30;color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:#ffd28a}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;position:absolute;width:100%;z-index:3;color:#fff}
+nav .logo{font-family:Pacifico,cursive;font-size:1.5rem}
+nav .call{background:#fff;color:var(--hib);padding:.5rem 1.1rem;border-radius:99px;font-weight:600;text-decoration:none}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;padding:7rem 6% 9rem;color:#fff;overflow:hidden;
+background:linear-gradient(180deg,#ff9a3d 0%,#ff6f61 38%,#e83f7a 62%,#7a3fa0 100%)}
+.sun{position:absolute;right:10%;top:22%;width:clamp(160px,28vw,320px);aspect-ratio:1;border-radius:50%;
+background:radial-gradient(circle,#ffe39a 0%,#ffc25a 55%,rgba(255,194,90,0) 72%)}
+.palm{position:absolute;bottom:60px;font-size:clamp(5rem,14vw,11rem);filter:drop-shadow(0 6px 12px rgba(0,0,0,.25))}
+.palm.l{left:-1rem}.palm.r{right:2%;transform:scaleX(-1)}
+.waves{position:absolute;left:0;right:0;bottom:0;height:140px}
+.hero-inner{position:relative;z-index:2;max-width:640px}
+.kicker{display:inline-block;background:rgba(255,255,255,.18);backdrop-filter:blur(4px);padding:.3rem .9rem;border-radius:99px;font-size:.85rem;letter-spacing:.06em}
+h1{font-family:Pacifico,cursive;font-weight:400;font-size:clamp(2.6rem,7vw,5rem);line-height:1.1;margin:.8rem 0;text-shadow:0 4px 18px rgba(0,0,0,.2)}
+.tag{font-size:1.2rem;max-width:30ch;opacity:.95}
+.btns{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.8rem}
+.btn{display:inline-flex;align-items:center;gap:.5rem;padding:.9rem 1.5rem;border-radius:14px;font-weight:600;text-decoration:none;transition:transform .15s}
+.btn:hover{transform:translateY(-2px)}
+.btn.primary{background:#fff;color:var(--hib);box-shadow:0 10px 24px rgba(0,0,0,.18)}
+.btn.ghost{border:2px solid #fff;color:#fff}
+.rating{margin-top:1.4rem;font-weight:600}
+section{padding:5rem 6%}
+h2{font-size:clamp(1.8rem,4vw,2.6rem);font-weight:800;color:var(--deep);margin-bottom:.4rem}
+.sub{color:#56707a;margin-bottom:2.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.4rem}
+.card{background:#fff;border-radius:22px;padding:1.8rem;box-shadow:0 12px 30px rgba(11,79,92,.08);border-top:6px solid var(--teal)}
+.card:nth-child(2){border-color:var(--sun)}.card:nth-child(3){border-color:var(--hib)}.card:nth-child(4){border-color:#f5b700}
+.card .ic{font-size:2.4rem}
+.card h3{margin:.6rem 0 .3rem;color:var(--deep)}
+.note{margin-top:1.6rem;display:inline-block;background:#fff0d9;border:1px dashed var(--sun);padding:.5rem 1rem;border-radius:10px;font-size:.9rem}
+.locs{background:linear-gradient(135deg,var(--teal),var(--deep));color:#fff}
+.locs h2{color:#fff}.locs .sub{color:#c9f1ef}
+.loc{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:22px;padding:1.8rem}
+.loc h3{font-size:1.3rem;margin-bottom:.3rem}
+.loc .btn{margin-top:1rem;background:#fff;color:var(--deep)}
+.contact{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem;align-items:start}
+form{background:#fff;padding:1.8rem;border-radius:22px;box-shadow:0 12px 30px rgba(11,79,92,.08);display:grid;gap:.8rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #e2e8ea;border-radius:12px;width:100%}
+button{font:inherit;font-weight:600;background:linear-gradient(90deg,var(--sun),var(--hib));color:#fff;border:0;padding:.9rem;border-radius:12px;cursor:not-allowed;opacity:.85}
+small{color:#6b8088}
+footer{background:var(--deep);color:#bfe3e3;text-align:center;padding:2rem 6%;font-size:.85rem}
+@media(max-width:640px){.palm.r{display:none}.sun{top:auto;bottom:150px;right:-40px}nav .call span{display:none}}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Lefty-J's Island Favorites. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<nav><span class="logo">Lefty-J's</span><a class="call" href="tel:+17027804610">📞 <span>(702) 780-4610</span></a></nav>
+<header class="hero">
+  <div class="sun"></div>
+  <div class="palm l">🌴</div><div class="palm r">🌴</div>
+  <div class="hero-inner">
+    <span class="kicker">🌺 FILIPINO × HAWAIIAN PLATE LUNCH · LAS VEGAS</span>
+    <h1>Lefty-J's Island Favorites</h1>
+    <p class="tag">Island-style plate lunch with a Filipino heart, served right here in Vegas.</p>
+    <div class="btns">
+      <a class="btn primary" href="tel:+17027804610">📞 Tap to call</a>
+      <a class="btn ghost" href="#locations">📍 Find us</a>
+    </div>
+    <p class="rating">⭐ 4.8 on Google · 800+ reviews</p>
+  </div>
+  <svg class="waves" viewBox="0 0 1440 140" preserveAspectRatio="none" aria-hidden="true">
+    <path fill="#0fa3a3" opacity=".55" d="M0,60 C240,120 480,0 720,50 C960,100 1200,20 1440,60 L1440,140 L0,140Z"/>
+    <path fill="#0b4f5c" opacity=".7" d="M0,90 C300,40 520,130 760,90 C1000,50 1220,120 1440,85 L1440,140 L0,140Z"/>
+    <path fill="#fff6ea" d="M0,115 C320,95 640,135 960,112 C1180,98 1320,118 1440,110 L1440,140 L0,140Z"/>
+  </svg>
+</header>
+
+<section id="menu">
+  <h2>Island favorites 🍱</h2>
+  <p class="sub">What the aloha spirit tastes like, Filipino style.</p>
+  <div class="grid">
+    <div class="card"><div class="ic">🍱</div><h3>Plate lunches</h3><p>Hearty island-style plates, built the classic way.</p></div>
+    <div class="card"><div class="ic">🇵🇭</div><h3>Filipino favorites</h3><p>Comfort food from the islands of the Philippines.</p></div>
+    <div class="card"><div class="ic">🌺</div><h3>Hawaiian classics</h3><p>Local-style favorites with a taste of Hawai'i.</p></div>
+    <div class="card"><div class="ic">🎉</div><h3>Catering</h3><p>Feed the whole ohana at your next party or office lunch.</p></div>
+  </div>
+  <span class="note">🛈 Full menu, photos and hours coming soon.</span>
+</section>
+
+<section class="locs" id="locations">
+  <h2>Two spots, one island vibe</h2>
+  <p class="sub">Call ahead or swing by.</p>
+  <div class="grid">
+    <div class="loc"><h3>🌴 Maryland Pkwy</h3><p>4550 S Maryland Pkwy Ste D<br>Las Vegas, NV 89119</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Lefty-J%27s%20Island%20Favorites%204550%20S%20Maryland%20Pkwy%20Ste%20D%2C%20Las%20Vegas%2C%20NV%2089119" target="_blank" rel="noopener">🧭 Get directions</a></div>
+    <div class="loc"><h3>🌊 Twain Ave</h3><p>860 E Twain Ave #102<br>Las Vegas, NV</p>
+      <a class="btn" href="https://www.google.com/maps/search/?api=1&query=Lefty-J%27s%20Island%20Favorites%20860%20E%20Twain%20Ave%20%23102%2C%20Las%20Vegas%2C%20NV" target="_blank" rel="noopener">🧭 Get directions</a></div>
+    <div class="loc"><h3>📞 Call us</h3><p>Questions, catering or big orders?</p>
+      <a class="btn" href="tel:+17027804610">(702) 780-4610</a></div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <div><h2>Talk story with us 🤙</h2><p class="sub">Catering requests, big orders, or just saying aloha. Online ordering and messaging are coming soon. For now, the fastest way to reach us is a call.</p>
+      <a class="btn primary" style="background:linear-gradient(90deg,var(--sun),var(--hib));color:#fff" href="tel:+17027804610">📞 (702) 780-4610</a></div>
+    <form onsubmit="return false" aria-label="Contact form preview (not active)">
+      <input type="text" placeholder="Your name" disabled>
+      <input type="tel" placeholder="Phone" disabled>
+      <textarea rows="4" placeholder="Tell us about your order or event" disabled></textarea>
+      <button type="button" disabled>Send message (coming soon)</button>
+      <small>Preview only. This form doesn't send anywhere yet.</small>
+    </form>
+  </div>
+</section>
+<footer>Lefty-J's Island Favorites · 4550 S Maryland Pkwy Ste D &amp; 860 E Twain Ave #102, Las Vegas · (702) 780-4610<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>
