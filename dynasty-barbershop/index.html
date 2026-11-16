@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dynasty Barbershop | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#0d1b2a;--cream:#f4f0e6;--red:#c41e3a;--gold:#c9a227;--stripe:#1b263b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--cream);color:var(--navy);line-height:1.65;overflow-x:hidden}
+.demo{background:var(--navy);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:var(--gold)}
+.pole{height:8px;background:repeating-linear-gradient(90deg,var(--red) 0 12px,#fff 12px 24px,var(--navy) 24px 36px)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;background:var(--navy);color:#fff}
+.logo{font-family:"Bebas Neue",sans-serif;font-size:1.8rem;letter-spacing:.08em}
+.logo span{color:var(--gold)}
+nav a.call{color:#fff;text-decoration:none;font-weight:700;border:1px solid rgba(255,255,255,.35);padding:.5rem 1rem;border-radius:6px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:4rem 6%;background:linear-gradient(135deg,var(--stripe),var(--navy) 55%)}
+.hero>*{color:#fff}
+.kicker{color:var(--gold);font-weight:700;letter-spacing:.12em;font-size:.8rem;text-transform:uppercase}
+h1{font-family:"Bebas Neue",sans-serif;font-size:clamp(3rem,8vw,5.5rem);line-height:1;margin:.6rem 0}
+.lead{max-width:36ch;opacity:.92;font-size:1.1rem}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.8rem}
+.btn{display:inline-block;padding:.95rem 1.5rem;border-radius:8px;font-weight:700;text-decoration:none}
+.btn.p{background:var(--red);color:#fff}
+.btn.s{border:2px solid var(--gold);color:var(--gold)}
+.meta{margin-top:1.3rem;font-size:.95rem;opacity:.85}
+.chair{justify-self:center;width:min(100%,320px);aspect-ratio:1;border-radius:50%;background:radial-gradient(circle at 40% 35%,#3d4f63,#1b263b 70%);
+display:grid;place-items:center;font-size:6rem;box-shadow:0 24px 48px rgba(0,0,0,.35)}
+section{padding:5rem 6%}
+h2{font-family:"Bebas Neue",sans-serif;font-size:clamp(2rem,5vw,3rem);letter-spacing:.04em}
+.sub{color:#5a6470;margin:.3rem 0 2.2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+.card{background:#fff;border-radius:16px;padding:1.6rem;border-top:4px solid var(--red);box-shadow:0 8px 24px rgba(13,27,42,.08)}
+.card h3{font-family:"Bebas Neue",sans-serif;font-size:1.4rem;letter-spacing:.04em;margin:.5rem 0 .3rem}
+.note{margin-top:1.6rem;font-style:italic;color:#6b7280}
+.barbers{background:var(--navy);color:#fff}
+.barbers h2{color:#fff}.barbers .sub{color:#b8c4d4}
+.barber-card{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:16px;padding:1.8rem;text-align:center}
+.barber-card .av{width:72px;height:72px;border-radius:50%;background:var(--stripe);margin:0 auto .8rem;display:grid;place-items:center;font-size:2rem}
+.reviews{text-align:center;background:#e8e4dc;padding:4rem 6%}
+.stars{font-size:1.4rem;color:var(--gold);letter-spacing:.2em}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border-radius:16px;padding:2rem;box-shadow:0 8px 24px rgba(13,27,42,.06)}
+form{display:grid;gap:.75rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #ddd;border-radius:10px;width:100%}
+button{font:inherit;font-weight:700;background:var(--navy);color:#fff;border:0;padding:.9rem;border-radius:10px;opacity:.75;cursor:not-allowed}
+small{color:#7a8494}
+footer{background:var(--navy);color:#a8b4c4;text-align:center;padding:2rem 6%;font-size:.85rem}
+@media(max-width:720px){.hero{grid-template-columns:1fr}.chair{max-width:200px;font-size:4rem}}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Dynasty Barbershop. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<div class="pole"></div>
+<nav><span class="logo">DYNASTY <span>BARBERSHOP</span></span><a class="call" href="tel:+17024444048">📞 (702) 444-4048</a></nav>
+<header class="hero">
+  <div>
+    <p class="kicker">Henderson, Nevada</p>
+    <h1>Sharp cuts.<br>Classic barbering.</h1>
+    <p class="lead">Walk-ins welcome. Fades, line-ups, and traditional barber services in a clean, welcoming shop.</p>
+    <div class="btns">
+      <a class="btn p" href="#book">📅 Book (coming soon)</a>
+      <a class="btn s" href="tel:+17024444048">📞 Call the shop</a>
+    </div>
+    <p class="meta">⭐ 4.9 on Google · ~1,182 reviews</p>
+  </div>
+  <div class="chair" aria-hidden="true">💈</div>
+</header>
+
+<section id="services">
+  <h2>Services</h2>
+  <p class="sub">What we offer at the chair.</p>
+  <div class="grid">
+    <div class="card"><div>✂️</div><h3>Haircuts &amp; fades</h3><p>Classic and modern cuts, shaped to your style.</p></div>
+    <div class="card"><div>🪒</div><h3>Beard trim &amp; shape-up</h3><p>Clean lines and a polished finish.</p></div>
+    <div class="card"><div>👦</div><h3>Kids cuts</h3><p>Family-friendly cuts for all ages.</p></div>
+    <div class="card"><div>🧴</div><h3>Hot towel &amp; extras</h3><p>Ask what's available when you visit.</p></div>
+  </div>
+  <p class="note">Service menu and pricing details coming soon. Call for questions.</p>
+</section>
+
+<section class="barbers" id="team">
+  <h2>Our barbers</h2>
+  <p class="sub">Meet the team. Profiles and bios coming soon.</p>
+  <div class="grid">
+    <div class="barber-card"><div class="av">✂️</div><h3>Barber profile</h3><p>Photo and specialties — coming soon</p></div>
+    <div class="barber-card"><div class="av">✂️</div><h3>Barber profile</h3><p>Photo and specialties — coming soon</p></div>
+    <div class="barber-card"><div class="av">✂️</div><h3>Barber profile</h3><p>Photo and specialties — coming soon</p></div>
+  </div>
+</section>
+
+<section class="reviews">
+  <h2>What customers say</h2>
+  <p class="sub">Highly rated on Google. Read the latest on Google Maps.</p>
+  <p class="stars">★★★★★</p>
+  <p style="margin-top:.8rem;font-weight:700">4.9 average · about 1,182 Google reviews</p>
+  <p class="note" style="margin-top:1.2rem">Individual review highlights coming soon — not quoted here to avoid invented testimonials.</p>
+</section>
+
+<section id="book">
+  <h2>Book your chair</h2>
+  <p class="sub">Online booking link coming soon. Call for the fastest answer on walk-ins and wait times.</p>
+  <a class="btn p" href="tel:+17024444048" style="display:inline-block">📞 (702) 444-4048</a>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Visit us</h3>
+      <p>217 N Stephanie St Ste A<br>Henderson, NV 89074</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Dynasty%20Barbershop%20217%20N%20Stephanie%20St%20Ste%20A%2C%20Henderson%2C%20NV%2089074" target="_blank" rel="noopener">Open in Google Maps →</a></p>
+      <p><a href="tel:+17024444048">(702) 444-4048</a></p><br>
+      <p><strong>Hours:</strong> coming soon</p></div>
+    <div class="box"><h3>✉️ Message us</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Your name" disabled>
+        <input placeholder="Phone" disabled>
+        <textarea rows="3" placeholder="Booking question or appointment request" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only. This form doesn't submit anywhere yet.</small>
+      </form></div>
+  </div>
+</section>
+<div class="pole"></div>
+<footer>Dynasty Barbershop · 217 N Stephanie St Ste A, Henderson, NV 89074 · (702) 444-4048<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

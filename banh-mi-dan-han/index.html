@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Banh Mi Dan Han | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@600;700&family=Karla:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--vn-red:#da251d;--vn-gold:#ffcd00;--leaf:#1e5631;--baguette:#f5e6c8;--crust:#c4a574}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Karla,system-ui,sans-serif;background:#fffef8;color:#2a2118;line-height:1.65;overflow-x:hidden}
+.demo{background:var(--leaf);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:var(--vn-gold)}
+.flag{height:5px;background:linear-gradient(90deg,var(--vn-red) 33%,var(--vn-gold) 33% 66%,var(--vn-red) 66%)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;border-bottom:2px solid var(--baguette)}
+.logo{font-family:Bitter,serif;font-weight:700;font-size:1.25rem;color:var(--vn-red)}
+nav a{font-weight:600;color:var(--leaf);text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center;padding:4rem 6%;background:var(--baguette)}
+h1{font-family:Bitter,serif;font-size:clamp(2.2rem,5.5vw,3.4rem);color:var(--vn-red);line-height:1.1}
+.vn{color:var(--leaf);font-weight:600;font-size:.95rem;letter-spacing:.05em}
+.lead{margin-top:.6rem;max-width:36ch}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.5rem}
+.btn{padding:.85rem 1.3rem;border-radius:8px;font-weight:700;text-decoration:none}
+.btn.p{background:var(--vn-red);color:#fff}
+.btn.s{background:var(--leaf);color:#fff}
+.baguette-art{font-size:clamp(5rem,15vw,9rem);text-align:center;filter:drop-shadow(4px 6px 0 var(--crust))}
+section{padding:4.5rem 6%}
+h2{font-family:Bitter,serif;font-size:clamp(1.7rem,4vw,2.4rem);color:var(--leaf)}
+.sub{color:#6b5d4a;margin:.3rem 0 1.8rem}
+.menu-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:2rem}
+.col h3{font-family:Bitter,serif;color:var(--vn-red);margin-bottom:.8rem;font-size:1.3rem}
+.col ul{list-style:none;display:grid;gap:.55rem}
+.col li{padding:.4rem 0;border-bottom:1px dotted #dcc9a8}
+.pho{background:linear-gradient(180deg,#fff8e8,#fffef8);border-top:4px solid var(--vn-gold);border-bottom:4px solid var(--vn-gold);text-align:center;padding:3.5rem 6%}
+.pho h2{color:var(--vn-red)}
+.call-box{background:var(--leaf);color:#fff;text-align:center;padding:3rem 6%}
+.call-box h2{color:#fff}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border:1px solid var(--baguette);border-radius:12px;padding:2rem}
+form{display:grid;gap:.75rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #e0d4bc;border-radius:8px;width:100%}
+button{font:inherit;font-weight:700;background:var(--vn-red);color:#fff;border:0;padding:.9rem;border-radius:8px;opacity:.75;cursor:not-allowed}
+small{color:#8a7d6c}
+.note{font-style:italic;color:#6b5d4a;margin-top:1rem}
+footer{text-align:center;padding:2rem 6%;background:var(--vn-red);color:#ffe8e6;font-size:.85rem}
+@media(max-width:700px){.hero{grid-template-columns:1fr}.baguette-art{order:-1}}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Banh Mi Dan Han. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<div class="flag"></div>
+<nav><span class="logo">Banh Mi Dan Han</span><a href="tel:+17025768006">📞 (702) 576-8006</a></nav>
+<header class="hero">
+  <div>
+    <p class="vn">VIETNAMESE SANDWICHES &amp; PHO</p>
+    <h1>Crispy baguette.<br>Bold flavors.</h1>
+    <p class="lead">Bánh mì, phở, and Vietnamese favorites on Spring Mountain.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:+17025768006">📞 Call-ahead</a>
+      <a class="btn s" href="https://www.google.com/maps/search/?api=1&query=Banh%20Mi%20Dan%20Han%204545%20Spring%20Mountain%20Rd%20Ste%20103%2C%20Las%20Vegas%2C%20NV%2089102" target="_blank" rel="noopener">📍 Directions</a>
+    </div>
+  </div>
+  <div class="baguette-art" aria-hidden="true">🥖</div>
+</header>
+
+<section id="menu">
+  <h2>Full menu</h2>
+  <p class="sub">Sandwiches, noodles, and more.</p>
+  <div class="menu-cols">
+    <div class="col">
+      <h3>Bánh mì 🥖</h3>
+      <ul>
+        <li>Grilled pork</li>
+        <li>Chicken</li>
+        <li>Meatball</li>
+        <li>Special combo</li>
+        <li>Vegetarian options</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Phở &amp; noodles 🍜</h3>
+      <ul>
+        <li>Phở beef</li>
+        <li>Phở chicken</li>
+        <li>Huế-style spicy noodle soup</li>
+        <li>Rice plates</li>
+        <li>Appetizers</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3>Drinks &amp; sides</h3>
+      <ul>
+        <li>Vietnamese iced coffee</li>
+        <li>Fresh drinks</li>
+        <li>Spring rolls</li>
+        <li>Daily specials</li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Menu items and photos coming soon. No prices listed here.</p>
+</section>
+
+<section class="pho" id="pho">
+  <h2>Phở — front and center</h2>
+  <p class="sub">Slow-simmered broth, rice noodles, herbs on the side. Ask what's available today.</p>
+</section>
+
+<section class="call-box">
+  <h2>Call-ahead ordering</h2>
+  <p class="sub" style="color:#c8e6c9">We'll start your bánh mì or phở before you arrive.</p>
+  <a class="btn p" style="background:var(--vn-gold);color:#2a2118" href="tel:+17025768006">(702) 576-8006</a>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Location</h3>
+      <p>4545 Spring Mountain Rd Ste 103<br>Las Vegas, NV 89102</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Banh%20Mi%20Dan%20Han%204545%20Spring%20Mountain%20Rd%20Ste%20103%2C%20Las%20Vegas%2C%20NV%2089102" target="_blank" rel="noopener">Google Maps →</a></p>
+      <p><a href="tel:+17025768006">(702) 576-8006</a></p><br>
+      <p><strong>Hours:</strong> coming soon</p></div>
+    <div class="box"><h3>Message</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Name" disabled>
+        <textarea rows="3" placeholder="Call-ahead or question" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only.</small>
+      </form></div>
+  </div>
+</section>
+<footer>Banh Mi Dan Han · 4545 Spring Mountain Rd Ste 103, Las Vegas, NV 89102 · (702) 576-8006<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Saigon Baguette | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600;700&family=Source+Serif+4:ital,wght@0,600;1,600&display=swap" rel="stylesheet">
+<style>
+:root{--saigon:#c1121f;--gold:#f9c74f;--mint:#90be6d;--flour:#faf7f2;--ink:#1b1b1b}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Source Serif 4",Georgia,serif;background:var(--flour);color:var(--ink);line-height:1.65;overflow-x:hidden}
+.demo{background:var(--saigon);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:var(--gold)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;background:#fff;border-bottom:1px solid #eee}
+.logo{font-family:"Josefin Sans",sans-serif;font-weight:700;font-size:1.35rem;color:var(--saigon);text-transform:uppercase;letter-spacing:.06em}
+nav a{font-family:"Josefin Sans",sans-serif;font-weight:600;color:var(--ink);text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr auto;gap:2rem;align-items:center;padding:3.5rem 6%;background:#fff}
+@media(max-width:680px){.hero{grid-template-columns:1fr}}
+h1{font-family:"Josefin Sans",sans-serif;font-size:clamp(2.2rem,5vw,3.2rem);font-weight:700}
+h1 em{font-family:"Source Serif 4",serif;font-style:italic;color:var(--saigon);font-weight:600}
+.lead{font-family:"Josefin Sans",sans-serif;font-size:1rem;max-width:34ch;color:#555}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.4rem}
+.btn{font-family:"Josefin Sans",sans-serif;padding:.85rem 1.3rem;border-radius:4px;font-weight:700;text-decoration:none}
+.btn.p{background:var(--saigon);color:#fff}
+.btn.s{border:2px solid var(--mint);color:#2d5a27}
+.bread{font-size:clamp(4rem,12vw,7rem);line-height:1}
+section{padding:4.5rem 6%}
+h2{font-family:"Josefin Sans",sans-serif;font-weight:700;font-size:clamp(1.7rem,4vw,2.3rem)}
+.sub{font-family:"Josefin Sans",sans-serif;color:#666;margin:.3rem 0 2rem}
+.mlist{max-width:640px;display:grid;gap:.6rem}
+.mlist li{list-style:none;padding:.75rem 1rem;background:#fff;border-left:4px solid var(--gold);font-family:"Josefin Sans",sans-serif}
+.strip{display:flex;flex-wrap:wrap;gap:1.5rem;justify-content:center;background:var(--gold);padding:2rem 6%;font-family:"Josefin Sans",sans-serif;font-weight:600}
+.cater{text-align:center;background:linear-gradient(180deg,#fff,var(--flour))}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;padding:2rem;border:1px solid #ebe6de}
+form{display:grid;gap:.75rem}
+input,textarea{font-family:"Josefin Sans",sans-serif;padding:.8rem 1rem;border:1px solid #ddd;border-radius:4px;width:100%}
+button{font-family:"Josefin Sans",sans-serif;font-weight:700;background:var(--saigon);color:#fff;border:0;padding:.9rem;border-radius:4px;opacity:.75;cursor:not-allowed}
+small{font-family:"Josefin Sans",sans-serif;color:#888;font-size:.85rem}
+.note{font-style:italic;color:#666;margin-top:1rem}
+footer{text-align:center;padding:2rem 6%;background:var(--ink);color:#ccc;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Saigon Baguette. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<nav><span class="logo">Saigon Baguette</span><a href="tel:+17023330976">📞 (702) 333-0976</a></nav>
+<header class="hero">
+  <div>
+    <h1>Fresh <em>bánh mì</em> daily</h1>
+    <p class="lead">French-Vietnamese sandwiches baked into a crisp baguette — Chinatown, Las Vegas.</p>
+    <div class="btns">
+      <a class="btn p" href="#order">Order online (coming soon)</a>
+      <a class="btn s" href="tel:+17023330976">Call-ahead</a>
+    </div>
+  </div>
+  <div class="bread" aria-hidden="true">🥖</div>
+</header>
+
+<section class="strip">
+  <span>🕐 Hours: coming soon</span>
+  <span>📍 5845 Spring Mountain Rd Ste 130</span>
+</section>
+
+<section id="menu">
+  <h2>Menu</h2>
+  <p class="sub">Sandwich favorites and sides.</p>
+  <ul class="mlist">
+    <li>Grilled pork bánh mì</li>
+    <li>Chicken bánh mì</li>
+    <li>Meatball bánh mì</li>
+    <li>Special combination</li>
+    <li>Vegetarian bánh mì</li>
+    <li>Spring rolls &amp; sides</li>
+    <li>Vietnamese iced coffee</li>
+  </ul>
+  <p class="note">Prices and photos coming soon.</p>
+</section>
+
+<section id="order">
+  <h2>Online ordering</h2>
+  <p class="sub">Pick-up order link coming soon.</p>
+  <a class="btn p" href="tel:+17023330976">📞 (702) 333-0976</a>
+</section>
+
+<section class="cater" id="catering">
+  <h2>Catering</h2>
+  <p class="sub">Sandwich platters for meetings and events. Call for options.</p>
+  <a class="btn s" href="tel:+17023330976">Ask about catering</a>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Location</h3>
+      <p>5845 Spring Mountain Rd Ste 130<br>Las Vegas, NV 89146</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Saigon%20Baguette%205845%20Spring%20Mountain%20Rd%20Ste%20130%2C%20Las%20Vegas%2C%20NV%2089146" target="_blank" rel="noopener">Google Maps →</a></p>
+      <p><a href="tel:+17023330976">(702) 333-0976</a></p><br>
+      <p><strong>Hours:</strong> coming soon</p></div>
+    <div class="box"><h3>Message</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Name" disabled>
+        <textarea rows="3" placeholder="Order or catering question" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only.</small>
+      </form></div>
+  </div>
+</section>
+<footer>Saigon Baguette · 5845 Spring Mountain Rd Ste 130, Las Vegas, NV 89146 · (702) 333-0976<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

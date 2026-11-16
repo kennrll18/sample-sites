@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Pokeman | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--teal:#00a896;--coral:#ff6b6b;--sea:#028090;--foam:#f0fffe;--kelp:#05668d}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Open Sans",system-ui,sans-serif;background:var(--foam);color:#1a2e35;line-height:1.65;overflow-x:hidden}
+.demo{background:var(--sea);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:#7fdbda}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%}
+.logo{font-family:Montserrat,sans-serif;font-weight:800;font-size:1.5rem;color:var(--sea);letter-spacing:-.02em}
+nav a{font-weight:600;color:var(--coral);text-decoration:none}
+.hero{padding:4rem 6%;display:grid;grid-template-columns:1fr 1fr;gap:2rem;align-items:center}
+@media(max-width:720px){.hero{grid-template-columns:1fr}}
+h1{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(2.5rem,7vw,4rem);color:var(--kelp);line-height:1.05}
+.lead{margin-top:.8rem;max-width:36ch}
+.btns{display:flex;gap:.8rem;flex-wrap:wrap;margin-top:1.6rem}
+.btn{padding:.9rem 1.4rem;border-radius:10px;font-weight:700;text-decoration:none}
+.btn.p{background:var(--teal);color:#fff}
+.btn.s{border:2px solid var(--coral);color:var(--coral)}
+.bowl{justify-self:center;width:min(100%,280px);aspect-ratio:1;border-radius:50%;background:conic-gradient(from 45deg,var(--teal),#80ed99,var(--coral),#ffd166,var(--sea));
+display:grid;place-items:center;box-shadow:0 16px 40px rgba(2,128,144,.25)}
+.bowl span{font-size:4rem;background:var(--foam);width:60%;aspect-ratio:1;border-radius:50%;display:grid;place-items:center}
+section{padding:4.5rem 6%}
+h2{font-family:Montserrat,sans-serif;font-weight:800;font-size:clamp(1.8rem,4vw,2.4rem);color:var(--kelp)}
+.sub{color:#5a7a85;margin:.3rem 0 2rem}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;max-width:900px;margin:0 auto}
+.step{background:#fff;border-radius:16px;padding:1.4rem;text-align:center;border:2px solid #d4f1f0}
+.step .n{font-family:Montserrat,sans-serif;font-weight:800;color:var(--teal);font-size:1.5rem}
+.options{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:2rem}
+.opt{background:#fff;padding:1.4rem;border-radius:14px;border-left:4px solid var(--coral)}
+.loyalty{text-align:center;background:linear-gradient(135deg,var(--kelp),var(--sea));color:#fff}
+.loyalty h2{color:#fff}.loyalty .sub{color:#b8e0e8}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border-radius:16px;padding:2rem}
+form{display:grid;gap:.75rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #cce8e6;border-radius:10px;width:100%}
+button{font:inherit;font-weight:700;background:var(--teal);color:#fff;border:0;padding:.9rem;border-radius:10px;opacity:.75;cursor:not-allowed}
+small{color:#7a969e}
+.note{font-style:italic;color:#5a7a85;margin-top:1.2rem}
+footer{text-align:center;padding:2rem 6%;background:var(--kelp);color:#a8dadc;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Pokeman. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<nav><span class="logo">POKEMAN</span><a href="tel:+17025506466">📞 (702) 550-6466</a></nav>
+<header class="hero">
+  <div>
+    <h1>Build your bowl</h1>
+    <p class="lead">Fresh poke and sushi bowls — pick your base, protein, and toppings your way.</p>
+    <div class="btns">
+      <a class="btn p" href="#order">Order online (coming soon)</a>
+      <a class="btn s" href="tel:+17025506466">📞 Call</a>
+    </div>
+  </div>
+  <div class="bowl" aria-hidden="true"><span>🥣</span></div>
+</header>
+
+<section id="bowl">
+  <h2>Build-your-bowl</h2>
+  <p class="sub">Start with a base, add protein, then finish with toppings and sauce.</p>
+  <div class="steps">
+    <div class="step"><div class="n">1</div><strong>Base</strong><p>Rice, greens, or mix</p></div>
+    <div class="step"><div class="n">2</div><strong>Protein</strong><p>Poke, sushi, tofu</p></div>
+    <div class="step"><div class="n">3</div><strong>Toppings</strong><p>Crunch &amp; fresh add-ons</p></div>
+    <div class="step"><div class="n">4</div><strong>Sauce</strong><p>House flavors</p></div>
+  </div>
+  <div class="options">
+    <div class="opt"><h3>Signature bowls</h3><p>Chef-built combos when you want it done for you.</p></div>
+    <div class="opt"><h3>Sushi rolls</h3><p>Rolls to go with your bowl or on their own.</p></div>
+  </div>
+  <p class="note">Full menu with build options coming soon.</p>
+</section>
+
+<section id="order">
+  <h2>Online ordering</h2>
+  <p class="sub">Order link coming soon — call for pick-up in the meantime.</p>
+  <a class="btn p" href="tel:+17025506466">📞 (702) 550-6466</a>
+</section>
+
+<section class="loyalty" id="loyalty">
+  <h2>Loyalty rewards</h2>
+  <p class="sub">Sign-up for loyalty perks coming soon. Ask in-store how to join today.</p>
+  <a class="btn p" style="background:var(--coral)" href="tel:+17025506466">Ask at the counter</a>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Visit</h3>
+      <p>3735 Spring Mountain Rd Ste 206<br>Las Vegas, NV 89102</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Pokeman%203735%20Spring%20Mountain%20Rd%20Ste%20206%2C%20Las%20Vegas%2C%20NV%2089102" target="_blank" rel="noopener">Google Maps →</a></p>
+      <p><a href="tel:+17025506466">(702) 550-6466</a></p><br>
+      <p><strong>Hours:</strong> coming soon</p></div>
+    <div class="box"><h3>Message</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Email for loyalty (coming soon)" disabled>
+        <button type="button" disabled>Sign up (coming soon)</button>
+        <small>Preview only.</small>
+      </form></div>
+  </div>
+</section>
+<footer>Pokeman · 3735 Spring Mountain Rd Ste 206, Las Vegas, NV 89102 · (702) 550-6466<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

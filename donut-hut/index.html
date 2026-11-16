@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Donut Hut | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--pink:#ff85a1;--cherry:#e63946;--sprinkle:#ffd166;--glaze:#fff5f7;--choc:#5c4033}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Lexend,system-ui,sans-serif;background:var(--glaze);color:var(--choc);line-height:1.65;overflow-x:hidden}
+.demo{background:var(--cherry);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:var(--sprinkle)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%}
+.logo{font-family:Fredoka,sans-serif;font-weight:700;font-size:1.6rem;color:var(--cherry)}
+nav a{font-weight:600;color:var(--pink);text-decoration:none}
+.hero{text-align:center;padding:4rem 6%;position:relative;background:
+radial-gradient(circle at 30% 20%,rgba(255,133,161,.35),transparent 45%),
+radial-gradient(circle at 70% 60%,rgba(255,209,102,.4),transparent 40%),var(--glaze)}
+.donuts{font-size:clamp(3rem,10vw,5rem);letter-spacing:.15em;margin-bottom:.5rem}
+.badge-vet{display:inline-block;background:#1d3557;color:#fff;font-size:.75rem;font-weight:600;padding:.35rem .9rem;border-radius:99px;margin-bottom:.8rem}
+h1{font-family:Fredoka,sans-serif;font-size:clamp(2.4rem,6vw,3.8rem);color:var(--cherry)}
+.lead{max-width:38ch;margin:.6rem auto}
+.btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
+.btn{font-family:Fredoka,sans-serif;padding:.9rem 1.4rem;border-radius:99px;font-weight:600;text-decoration:none}
+.btn.p{background:var(--cherry);color:#fff;box-shadow:0 6px 0 #b82d38}
+.btn.s{border:3px solid var(--pink);color:var(--cherry)}
+section{padding:4.5rem 6%}
+h2{font-family:Fredoka,sans-serif;font-size:clamp(1.8rem,4vw,2.5rem);color:var(--cherry)}
+.sub{color:#7a5f55;margin:.3rem 0 2rem}
+.dozen{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:1rem;max-width:800px;margin:0 auto}
+.donut-card{background:#fff;border-radius:20px;padding:1.4rem;text-align:center;box-shadow:0 8px 20px rgba(230,57,70,.12)}
+.donut-card .em{font-size:2.5rem}
+.story{background:linear-gradient(135deg,#1d3557,#457b9d);color:#f1faee;text-align:center}
+.story h2{color:#fff}.story .sub{color:#a8dadc}
+.story-box{max-width:520px;margin:0 auto;background:rgba(255,255,255,.1);border-radius:16px;padding:2rem;border:2px dashed rgba(255,255,255,.3)}
+.preorder{text-align:center}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border-radius:20px;padding:2rem;box-shadow:0 6px 16px rgba(0,0,0,.06)}
+form{display:grid;gap:.75rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:2px solid #ffd6e0;border-radius:14px;width:100%}
+button{font:inherit;font-family:Fredoka,sans-serif;font-weight:600;background:var(--pink);color:#fff;border:0;padding:.9rem;border-radius:99px;opacity:.75;cursor:not-allowed}
+small{color:#9a7d72}
+.note{font-style:italic;color:#7a5f55}
+footer{text-align:center;padding:2rem 6%;background:var(--cherry);color:#ffe5e8;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Donut Hut. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<nav><span class="logo">Donut Hut</span><a href="tel:+17023691711">📞 (702) 369-1711</a></nav>
+<header class="hero">
+  <div class="donuts" aria-hidden="true">🍩🍩🍩</div>
+  <span class="badge-vet">🇺🇸 Veteran-owned</span>
+  <h1>Donut Hut</h1>
+  <p class="lead">Fresh donuts, fritters, and coffee — made with care on Desert Inn.</p>
+  <div class="btns">
+    <a class="btn p" href="tel:+17023691711">📞 Call for dozens</a>
+    <a class="btn s" href="https://www.google.com/maps/search/?api=1&query=Donut%20Hut%203242%20E%20Desert%20Inn%20Rd%20%2317%2C%20Las%20Vegas%2C%20NV%2089121" target="_blank" rel="noopener">📍 Directions</a>
+  </div>
+</header>
+
+<section id="menu">
+  <h2>Menu</h2>
+  <p class="sub">Fan favorites from the case.</p>
+  <div class="dozen">
+    <div class="donut-card"><div class="em">🍩</div><strong>Glazed</strong></div>
+    <div class="donut-card"><div class="em">🍫</div><strong>Chocolate</strong></div>
+    <div class="donut-card"><div class="em">🍓</div><strong>Fruited &amp; frosted</strong></div>
+    <div class="donut-card"><div class="em">🥐</div><strong>Bear claws &amp; fritters</strong></div>
+    <div class="donut-card"><div class="em">☕</div><strong>Coffee &amp; drinks</strong></div>
+    <div class="donut-card"><div class="em">✨</div><strong>Seasonal</strong></div>
+  </div>
+  <p class="note">Full menu and pricing coming soon.</p>
+</section>
+
+<section class="preorder" id="preorder">
+  <h2>Dozen &amp; box pre-orders</h2>
+  <p class="sub">Need a dozen or a full box for the morning meeting? Call ahead so we can have them ready.</p>
+  <a class="btn p" href="tel:+17023691711">📞 (702) 369-1711</a>
+</section>
+
+<section>
+  <h2>Hours</h2>
+  <p class="sub">Open hours coming soon — call for today's case.</p>
+</section>
+
+<section class="story" id="story">
+  <h2>Our story</h2>
+  <p class="sub">Veteran-owned and community-rooted.</p>
+  <div class="story-box">
+    <p>Owner story, photos, and community highlights — <strong>coming soon</strong>. We're keeping this space for the real narrative from the shop, not a placeholder tale.</p>
+  </div>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Visit</h3>
+      <p>3242 E Desert Inn Rd #17<br>Las Vegas, NV 89121</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Donut%20Hut%203242%20E%20Desert%20Inn%20Rd%20%2317%2C%20Las%20Vegas%2C%20NV%2089121" target="_blank" rel="noopener">Google Maps →</a></p>
+      <p><a href="tel:+17023691711">(702) 369-1711</a></p><br>
+      <p><strong>Hours:</strong> coming soon</p></div>
+    <div class="box"><h3>Message</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Name" disabled>
+        <textarea rows="3" placeholder="Pre-order or question" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only.</small>
+      </form></div>
+  </div>
+</section>
+<footer>Donut Hut · 3242 E Desert Inn Rd #17, Las Vegas, NV 89121 · (702) 369-1711<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

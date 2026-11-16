@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Ross J's Aloha Grill | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Rubik:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--ocean:#0077b6;--sand:#ffe8c8;--sun:#ffba08;--palm:#2d6a4f;--lav:#e07a5f}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Rubik,system-ui,sans-serif;background:var(--sand);color:#1b2838;line-height:1.65;overflow-x:hidden}
+.demo{background:var(--palm);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:var(--sun)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%}
+.logo{font-family:"Alfa Slab One",serif;font-size:1.1rem;color:var(--ocean);line-height:1.2}
+nav a{font-weight:600;color:var(--palm);text-decoration:none}
+.hero{position:relative;padding:4.5rem 6% 5rem;color:#fff;text-align:center;overflow:hidden;
+background:linear-gradient(180deg,var(--ocean) 0%,#023e8a 55%,var(--palm) 100%)}
+.wave{position:absolute;bottom:0;left:0;right:0;height:80px;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 80'%3E%3Cpath fill='%23ffe8c8' d='M0,40 C360,80 720,0 1080,40 C1260,60 1380,50 1440,55 L1440,80 L0,80Z'/%3E%3C/svg%3E") bottom/cover no-repeat}
+.hero-inner{position:relative;z-index:1;max-width:640px;margin:0 auto}
+h1{font-family:"Alfa Slab One",serif;font-size:clamp(2rem,6vw,3.2rem);margin:.5rem 0;text-shadow:0 2px 8px rgba(0,0,0,.2)}
+.lead{opacity:.95;max-width:38ch;margin:0 auto}
+.btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.6rem}
+.btn{padding:.9rem 1.4rem;border-radius:12px;font-weight:600;text-decoration:none}
+.btn.p{background:var(--sun);color:#1b2838}
+.btn.s{border:2px solid #fff;color:#fff}
+section{padding:4.5rem 6%}
+h2{font-family:"Alfa Slab One",serif;font-size:clamp(1.6rem,4vw,2.3rem);color:var(--ocean)}
+.sub{color:#5a6b7d;margin:.3rem 0 2rem}
+.plates{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+.plate{background:#fff;border-radius:20px;padding:1.6rem;border-bottom:5px solid var(--lav);box-shadow:0 8px 20px rgba(0,119,182,.1)}
+.plate .ic{font-size:2.4rem}
+.plate h3{color:var(--palm);margin:.5rem 0 .3rem}
+.call{background:linear-gradient(90deg,var(--palm),#1b4332);color:#fff;text-align:center}
+.call h2{color:#fff}.call .sub{color:#b7e4c7}
+.cater{background:#fff;border-top:3px dashed var(--sun)}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border-radius:16px;padding:2rem;box-shadow:0 6px 18px rgba(0,0,0,.06)}
+form{display:grid;gap:.75rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #e0d0bc;border-radius:12px;width:100%}
+button{font:inherit;font-weight:600;background:var(--ocean);color:#fff;border:0;padding:.9rem;border-radius:12px;opacity:.75;cursor:not-allowed}
+small{color:#8a97a8}
+.note{font-style:italic;color:#6b7d8f}
+footer{text-align:center;padding:2rem 6%;background:var(--ocean);color:#bde0fe;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Ross J's Aloha Grill. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<nav><span class="logo">ROSS J'S<br>ALOHA GRILL</span><a href="tel:+17024355600">📞 (702) 435-5600</a></nav>
+<header class="hero">
+  <div class="hero-inner">
+    <p>🌺 Hawaiian plate lunch · Henderson</p>
+    <h1>Aloha on a plate</h1>
+    <p class="lead">Local-style plate lunches, island comfort food, and flavors that feel like home.</p>
+    <div class="btns">
+      <a class="btn p" href="tel:+17024355600">📞 Call-ahead order</a>
+      <a class="btn s" href="https://www.google.com/maps/search/?api=1&query=Ross%20J%27s%20Aloha%20Grill%204650%20E%20Sunset%20Rd%2C%20Henderson%2C%20NV%2089014" target="_blank" rel="noopener">📍 Directions</a>
+    </div>
+  </div>
+  <div class="wave" aria-hidden="true"></div>
+</header>
+
+<section id="menu">
+  <h2>Menu highlights</h2>
+  <p class="sub">Plate lunch favorites and more.</p>
+  <div class="plates">
+    <div class="plate"><div class="ic">🍱</div><h3>Plate lunches</h3><p>Two scoops rice, mac salad, and your choice of protein.</p></div>
+    <div class="plate"><div class="ic">🍖</div><h3>Grill &amp; BBQ</h3><p>Island-style meats and specials.</p></div>
+    <div class="plate"><div class="ic">🥗</div><h3>Sides</h3><p>Mac salad, rice, and classic sides.</p></div>
+    <div class="plate"><div class="ic">🧃</div><h3>Drinks</h3><p>Cool off with your meal.</p></div>
+  </div>
+  <p class="note">Full menu and hours coming soon.</p>
+</section>
+
+<section class="call">
+  <h2>Call-ahead ordering 📞</h2>
+  <p class="sub">Skip the line — call before you come and we'll have it ready.</p>
+  <a class="btn p" href="tel:+17024355600">(702) 435-5600</a>
+</section>
+
+<section class="cater" id="catering">
+  <h2>Catering trays</h2>
+  <p class="sub">Office lunches, parties, and family gatherings. Call to discuss tray sizes.</p>
+  <a class="btn p" style="display:inline-block;background:var(--palm);color:#fff" href="tel:+17024355600">Ask about catering</a>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Find us</h3>
+      <p>4650 E Sunset Rd<br>Henderson, NV 89014</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Ross%20J%27s%20Aloha%20Grill%204650%20E%20Sunset%20Rd%2C%20Henderson%2C%20NV%2089014" target="_blank" rel="noopener">Google Maps →</a></p>
+      <p><a href="tel:+17024355600">(702) 435-5600</a></p><br>
+      <p><strong>Hours:</strong> coming soon</p></div>
+    <div class="box"><h3>Message</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Name" disabled>
+        <textarea rows="3" placeholder="Catering or call-ahead order" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only.</small>
+      </form></div>
+  </div>
+</section>
+<footer>Ross J's Aloha Grill · 4650 E Sunset Rd, Henderson, NV 89014 · (702) 435-5600<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

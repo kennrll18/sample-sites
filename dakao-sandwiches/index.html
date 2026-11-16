@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Dakao Sandwiches | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@700&family=Mulish:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#e85d04;--rust:#bc3908;--cream:#fff8f0;--char:#2b2118;--pickle:#588157}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Mulish,system-ui,sans-serif;background:var(--cream);color:var(--char);line-height:1.65;overflow-x:hidden}
+.demo{background:var(--rust);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:#ffdd99}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%}
+.logo{font-family:"Libre Baskerville",serif;font-size:1.3rem;color:var(--rust)}
+nav a{font-weight:700;color:var(--orange);text-decoration:none}
+.hero{text-align:center;padding:4rem 6% 4.5rem;background:
+repeating-linear-gradient(-12deg,transparent,transparent 28px,rgba(232,93,4,.03) 28px,rgba(232,93,4,.03) 56px),var(--cream)}
+.stamp{display:inline-block;border:3px solid var(--orange);padding:.3rem 1rem;font-weight:700;letter-spacing:.15em;font-size:.75rem;color:var(--orange);transform:rotate(-2deg);margin-bottom:1rem}
+h1{font-family:"Libre Baskerville",serif;font-size:clamp(2.4rem,6vw,3.6rem);color:var(--rust)}
+.lead{max-width:40ch;margin:.8rem auto}
+.btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.5rem}
+.btn{padding:.9rem 1.4rem;border-radius:6px;font-weight:700;text-decoration:none}
+.btn.p{background:var(--orange);color:#fff}
+.btn.s{border:2px solid var(--pickle);color:var(--pickle)}
+.sand-row{display:flex;flex-wrap:wrap;justify-content:center;gap:1rem;margin-top:2rem;font-size:3rem}
+section{padding:4.5rem 6%}
+h2{font-family:"Libre Baskerville",serif;font-size:clamp(1.7rem,4vw,2.4rem);color:var(--rust)}
+.sub{color:#6b5c4f;margin:.3rem 0 2rem}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem}
+.card{background:#fff;border-radius:10px;padding:1.5rem;box-shadow:0 6px 16px rgba(43,33,24,.08)}
+.card h3{color:var(--orange);margin:.4rem 0}
+.cater{background:var(--pickle);color:#fff;text-align:center}
+.cater h2{color:#fff}.cater .sub{color:#d8ead9}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border-radius:10px;padding:2rem;box-shadow:0 4px 12px rgba(0,0,0,.05)}
+form{display:grid;gap:.75rem}
+input,textarea{font:inherit;padding:.8rem 1rem;border:1.5px solid #e8ddd0;border-radius:8px;width:100%}
+button{font:inherit;font-weight:700;background:var(--rust);color:#fff;border:0;padding:.9rem;border-radius:8px;opacity:.75;cursor:not-allowed}
+small{color:#8a7d72}
+.note{font-style:italic;color:#6b5c4f}
+footer{text-align:center;padding:2rem 6%;background:var(--char);color:#d4c4b0;font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of Dakao Sandwiches. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<nav><span class="logo">Dakao Sandwiches</span><a href="tel:+17022210930">📞 (702) 221-0930</a></nav>
+<header class="hero">
+  <span class="stamp">BÁNH MÌ · LAS VEGAS</span>
+  <h1>Dakao Sandwiches</h1>
+  <p class="lead">Vietnamese bánh mì — fresh baguette, pickles, herbs, and your choice of filling.</p>
+  <div class="btns">
+    <a class="btn p" href="#order">Order online (coming soon)</a>
+    <a class="btn s" href="tel:+17022210930">📞 Call</a>
+  </div>
+  <div class="sand-row" aria-hidden="true">🥖🥒🌿🥩</div>
+</header>
+
+<section id="menu">
+  <h2>Menu</h2>
+  <p class="sub">Classic bánh mì and combo options.</p>
+  <div class="grid">
+    <div class="card"><div>🥖</div><h3>Bánh mì sandwiches</h3><p>Pork, chicken, tofu, and house specials.</p></div>
+    <div class="card"><div>🍳</div><h3>Breakfast &amp; extras</h3><p>Egg bánh mì and add-ons.</p></div>
+    <div class="card"><div>🥤</div><h3>Drinks</h3><p>Coffee, teas, and sodas.</p></div>
+    <div class="card"><div>📦</div><h3>Combos</h3><p>Sandwich plus drink deals — details coming soon.</p></div>
+  </div>
+  <p class="note">Full menu coming soon.</p>
+</section>
+
+<section class="cater" id="catering">
+  <h2>Catering &amp; bulk orders</h2>
+  <p class="sub">Office lunches, events, and large tray orders. Call for minimums and lead time.</p>
+  <a class="btn p" style="background:#fff;color:var(--pickle)" href="tel:+17022210930">📞 (702) 221-0930</a>
+</section>
+
+<section id="order">
+  <h2>Online ordering</h2>
+  <p class="sub">Order link coming soon.</p>
+  <a class="btn p" href="tel:+17022210930">Call to order</a>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Visit</h3>
+      <p>5700 Spring Mountain Rd Ste I<br>Las Vegas, NV 89146</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=Dakao%20Sandwiches%205700%20Spring%20Mountain%20Rd%20Ste%20I%2C%20Las%20Vegas%2C%20NV%2089146" target="_blank" rel="noopener">Google Maps →</a></p>
+      <p><a href="tel:+17022210930">(702) 221-0930</a></p><br>
+      <p><strong>Hours:</strong> coming soon</p></div>
+    <div class="box"><h3>Message</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Name" disabled>
+        <textarea rows="3" placeholder="Catering or bulk order" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only.</small>
+      </form></div>
+  </div>
+</section>
+<footer>Dakao Sandwiches · 5700 Spring Mountain Rd Ste I, Las Vegas, NV 89146 · (702) 221-0930<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>

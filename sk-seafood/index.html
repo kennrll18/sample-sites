@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>SK Seafood Restaurant | Sample design concept</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--crimson:#8b1c2c;--gold:#d4af37;--jade:#1a4d3e;--rice:#faf6ef;--ink:#1a1a1a}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Source Sans 3",system-ui,sans-serif;background:var(--rice);color:var(--ink);line-height:1.65;overflow-x:hidden}
+.demo{background:var(--crimson);color:#fff;font-size:.8rem;text-align:center;padding:.5rem 1rem}
+.demo a{color:var(--gold)}
+.lantern{height:6px;background:linear-gradient(90deg,var(--crimson),var(--gold),var(--crimson))}
+nav{display:flex;justify-content:space-between;align-items:center;padding:1rem 6%;border-bottom:2px solid var(--gold)}
+.logo{font-family:"Noto Serif SC",serif;font-size:1.35rem;color:var(--crimson);font-weight:700}
+.logo small{display:block;font-family:"Source Sans 3",sans-serif;font-size:.7rem;color:var(--jade);font-weight:600;letter-spacing:.1em}
+nav a{color:var(--crimson);font-weight:700;text-decoration:none}
+.hero{padding:4rem 6%;text-align:center;background:
+radial-gradient(circle at 50% 0,rgba(212,175,55,.2),transparent 50%),
+linear-gradient(180deg,#fff8f0,var(--rice));
+position:relative;overflow:hidden}
+.hero::before{content:"福";position:absolute;font-family:"Noto Serif SC",serif;font-size:clamp(8rem,25vw,14rem);color:rgba(139,28,44,.06);right:5%;top:10%;pointer-events:none}
+.kicker{color:var(--jade);font-weight:700;letter-spacing:.14em;font-size:.8rem;text-transform:uppercase}
+h1{font-family:"Noto Serif SC",serif;font-size:clamp(2.2rem,6vw,3.8rem);color:var(--crimson);margin:.8rem 0}
+h1 .zh{display:block;font-size:.55em;color:var(--jade);margin-top:.2rem}
+.lead{max-width:42ch;margin:0 auto;font-size:1.1rem;color:#444}
+.btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap;margin-top:1.8rem}
+.btn{padding:.95rem 1.5rem;border-radius:8px;font-weight:700;text-decoration:none}
+.btn.p{background:var(--crimson);color:#fff}
+.btn.s{border:2px solid var(--gold);color:var(--crimson)}
+section{padding:5rem 6%}
+h2{font-family:"Noto Serif SC",serif;font-size:clamp(1.8rem,4vw,2.6rem);color:var(--crimson)}
+.sub{color:#666;margin:.3rem 0 2rem}
+.menu-wrap{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.menu-col{background:#fff;border:2px solid var(--gold);border-radius:12px;padding:2rem}
+.menu-col h3{font-family:"Noto Serif SC",serif;color:var(--jade);margin-bottom:1rem;font-size:1.35rem}
+.menu-col ul{list-style:none;display:grid;gap:.7rem}
+.menu-col li{padding:.5rem 0;border-bottom:1px dashed #e8dcc8}
+.menu-col .en{font-weight:600}.menu-col .cn{color:#6b5b4a;font-size:.95rem}
+.live{background:linear-gradient(135deg,var(--jade),#0d3328);color:#f5f0e6;text-align:center}
+.live h2{color:#fff}.live .sub{color:#c5ddd6}
+.tanks{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center;margin-top:1.5rem}
+.tank{background:rgba(255,255,255,.1);border:1px solid rgba(212,175,55,.4);border-radius:12px;padding:1.2rem 1.6rem;min-width:140px}
+.banquet{background:#fff;border-top:4px solid var(--crimson);padding:4rem 6%;text-align:center}
+.visit{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:2rem}
+.box{background:#fff;border-radius:12px;padding:2rem;border:1px solid #e8dcc8}
+form{display:grid;gap:.75rem}
+input,textarea,select{font:inherit;padding:.8rem 1rem;border:1.5px solid #ddd;border-radius:8px;width:100%}
+button{font:inherit;font-weight:700;background:var(--crimson);color:#fff;border:0;padding:.9rem;border-radius:8px;opacity:.75;cursor:not-allowed}
+small{color:#888}
+footer{background:var(--ink);color:#bbb;text-align:center;padding:2rem 6%;font-size:.85rem}
+.note{font-style:italic;color:#777;margin-top:1.5rem}
+</style>
+</head>
+<body>
+<div class="demo">Sample design concept by Kenn, not the official website of SK Seafood Restaurant. Interested? Contact <a href="mailto:kennrll18@gmail.com">kennrll18@gmail.com</a></div>
+<div class="lantern"></div>
+<nav><span class="logo">SK Seafood<small>CANTONESE SEAFOOD · CHINATOWN</small></span><a href="tel:+17022722462">📞 (702) 272-2462</a></nav>
+<header class="hero">
+  <p class="kicker">Las Vegas Chinatown</p>
+  <h1>SK Seafood Restaurant<span class="zh">海味餐馆</span></h1>
+  <p class="lead">Cantonese-style seafood, dim sum favorites, and banquet-ready dishes. Live seafood selections when available.</p>
+  <div class="btns">
+    <a class="btn p" href="tel:+17022722462">📞 Reservations</a>
+    <a class="btn s" href="https://www.google.com/maps/search/?api=1&query=SK%20Seafood%20Restaurant%205600%20Spring%20Mountain%20Rd%2C%20Las%20Vegas%2C%20NV%2089146" target="_blank" rel="noopener">📍 Directions</a>
+  </div>
+</header>
+
+<section id="menu">
+  <h2>Menu</h2>
+  <p class="sub">Bilingual sections — English and Chinese labels.</p>
+  <div class="menu-wrap">
+    <div class="menu-col">
+      <h3>Seafood 海鲜</h3>
+      <ul>
+        <li><span class="en">Steamed fish</span><br><span class="cn">清蒸鱼</span></li>
+        <li><span class="en">Salt &amp; pepper shrimp</span><br><span class="cn">椒盐虾</span></li>
+        <li><span class="en">Lobster &amp; crab dishes</span><br><span class="cn">龙虾 · 螃蟹</span></li>
+        <li><span class="en">House seafood specialties</span><br><span class="cn">招牌海味</span></li>
+      </ul>
+    </div>
+    <div class="menu-col">
+      <h3>Dim sum &amp; classics 点心</h3>
+      <ul>
+        <li><span class="en">Har gow &amp; siu mai</span><br><span class="cn">虾饺 · 烧卖</span></li>
+        <li><span class="en">Roast duck &amp; BBQ</span><br><span class="cn">烧鸭 · 烧味</span></li>
+        <li><span class="en">Noodle &amp; rice plates</span><br><span class="cn">炒面 · 炒饭</span></li>
+        <li><span class="en">Vegetable dishes</span><br><span class="cn">时蔬</span></li>
+      </ul>
+    </div>
+  </div>
+  <p class="note">Full menu with photos and pricing coming soon.</p>
+</section>
+
+<section class="live">
+  <h2>Live seafood specials 🐟</h2>
+  <p class="sub">Today's tank selection varies. Call ahead to check what's swimming.</p>
+  <div class="tanks">
+    <div class="tank">🦞 Live lobster</div>
+    <div class="tank">🦀 Fresh crab</div>
+    <div class="tank">🐟 Seasonal fish</div>
+    <div class="tank">🦐 Shellfish</div>
+  </div>
+  <p class="note" style="color:#a8c4bc;margin-top:1.5rem">Daily specials list coming soon.</p>
+</section>
+
+<section class="banquet" id="banquet">
+  <h2>Banquets &amp; reservations</h2>
+  <p class="sub">Planning a family dinner, birthday, or business lunch? Call to discuss party size and banquet options.</p>
+  <a class="btn p" href="tel:+17022722462">📞 (702) 272-2462</a>
+</section>
+
+<section id="visit">
+  <div class="visit">
+    <div class="box"><h3>📍 Find us</h3>
+      <p>5600 Spring Mountain Rd<br>Las Vegas, NV 89146<br>(Chinatown)</p><br>
+      <p><a href="https://www.google.com/maps/search/?api=1&query=SK%20Seafood%20Restaurant%205600%20Spring%20Mountain%20Rd%2C%20Las%20Vegas%2C%20NV%2089146" target="_blank" rel="noopener">Google Maps →</a></p>
+      <p><a href="tel:+17022722462">(702) 272-2462</a></p><br>
+      <p><strong>Hours:</strong> coming soon</p></div>
+    <div class="box"><h3>Reservation request</h3>
+      <form onsubmit="return false" aria-label="Contact form preview (not active)">
+        <input placeholder="Your name" disabled>
+        <input placeholder="Phone" disabled>
+        <select disabled><option>Banquet / large party</option><option>Regular reservation</option><option>Other</option></select>
+        <textarea rows="3" placeholder="Date, headcount, occasion" disabled></textarea>
+        <button type="button" disabled>Send (coming soon)</button>
+        <small>Preview only. Please call for reservations.</small>
+      </form></div>
+  </div>
+</section>
+<footer>SK Seafood Restaurant · 5600 Spring Mountain Rd, Las Vegas, NV 89146 · (702) 272-2462<br>Sample design concept by Kenn. Not affiliated with or endorsed by the business.</footer>
+</body>
+</html>
