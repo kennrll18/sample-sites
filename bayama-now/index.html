@@ -84,17 +84,20 @@ h1,h2,h3{font-family:Outfit,system-ui,sans-serif;font-weight:700;letter-spacing:
 .logo span{color:var(--teal-l)}
 .site-header.solid .logo span{color:var(--teal)}
 .nav-links{display:flex;gap:1rem;align-items:center;flex-wrap:wrap}
-.nav-links a{color:#e2e8f0;text-decoration:none;font-weight:600;font-size:.92rem}
-.site-header.solid .nav-links a{color:var(--muted)}
-.nav-links a:hover{color:var(--teal-l)}
-.site-header.solid .nav-links a:hover{color:var(--teal-d)}
+.nav-links a:not(.btn){color:#e2e8f0;text-decoration:none;font-weight:600;font-size:.92rem}
+.site-header.solid .nav-links a:not(.btn){color:var(--muted)}
+.nav-links a:not(.btn):hover{color:var(--teal-l)}
+.site-header.solid .nav-links a:not(.btn):hover{color:var(--teal-d)}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:.35rem;padding:.82rem 1.35rem;border-radius:999px;font-weight:700;text-decoration:none;font-size:.93rem;border:0;cursor:pointer;font-family:inherit;transition:transform .15s,box-shadow .15s,background .15s}
 .btn:focus-visible{outline:3px solid var(--teal-l);outline-offset:2px}
 .btn.p{background:linear-gradient(135deg,var(--teal),var(--blue));color:#fff;box-shadow:0 10px 28px rgba(13,148,136,.35)}
 .btn.p:hover{transform:translateY(-1px)}
 .btn.s{background:#fff;color:var(--blue);border:2px solid #fff}
 .btn.solid-s{background:#fff;color:var(--blue);border:2px solid var(--blue)}
-.btn.call{background:var(--blue-d);color:#fff}
+.btn.call{background:linear-gradient(135deg,var(--teal) 0%,var(--blue) 55%,var(--blue-d) 100%);color:#fff;box-shadow:0 8px 22px rgba(12,74,110,.45),0 0 0 1px rgba(255,255,255,.28) inset;text-shadow:0 1px 2px rgba(15,23,42,.35)}
+.btn.call:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(12,74,110,.5),0 0 0 1px rgba(255,255,255,.34) inset}
+.btn.call .call-ic{width:1.05rem;height:1.05rem;flex:0 0 auto;fill:currentColor;filter:drop-shadow(0 1px 1px rgba(15,23,42,.25))}
+.site-header.solid .btn.call{color:#fff}
 .hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg,rgba(15,23,42,.86) 0%,rgba(15,23,42,.62) 42%,rgba(12,74,110,.45) 100%)}
@@ -196,7 +199,7 @@ footer a{color:var(--teal-l)}
       <a class="hide-sm" href="#services">Services</a>
       <a class="hide-sm" href="#results">Results</a>
       <a class="hide-sm" href="#faq">FAQ</a>
-      <a class="btn call" href="tel:+17023826569">📞 Call</a>
+      <a class="btn call" href="tel:+17023826569"><svg class="call-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8c1.7 3.3 3.9 5.5 7.2 7.2l2.4-2.4c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.7.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.1 21.1 2.9 13.9 2.9 4.1 2.9 3.5 3.4 3 4 3h3.6c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.5.6 3.7.1.4 0 .8-.3 1.1l-2.4 2.4z"/></svg> Call</a>
     </div>
   </nav>
   <section class="hero" aria-label="Introduction">
@@ -396,7 +399,7 @@ footer a{color:var(--teal-l)}
 </main>
 
 <div class="mobile-cta" role="navigation" aria-label="Quick contact">
-  <a class="btn call" href="tel:+17023826569">📞 Call</a>
+  <a class="btn call" href="tel:+17023826569"><svg class="call-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8c1.7 3.3 3.9 5.5 7.2 7.2l2.4-2.4c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.7.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.1 21.1 2.9 13.9 2.9 4.1 2.9 3.5 3.4 3 4 3h3.6c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.5.6 3.7.1.4 0 .8-.3 1.1l-2.4 2.4z"/></svg> Call</a>
   <a class="btn p" href="#quote">Free Quote</a>
 </div>
 
