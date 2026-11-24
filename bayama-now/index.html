@@ -129,7 +129,7 @@ section{padding:clamp(3.5rem,8vw,5.5rem) 0}
 .pillar h3{font-size:1.02rem;color:var(--teal-d)}
 .testi{margin-top:2rem;padding:1.35rem 1.5rem;border-left:4px solid var(--teal);background:#fff;border-radius:0 var(--radius) var(--radius) 0;box-shadow:0 6px 24px rgba(15,23,42,.06);font-size:1.05rem;color:#334155}
 .testi cite{display:block;margin-top:.65rem;font-style:normal;font-size:.88rem;color:var(--muted);font-weight:600}
-.compare{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/10;box-shadow:var(--shadow);touch-action:pan-y;max-width:100%}
+.compare{position:relative;border-radius:var(--radius);overflow:hidden;aspect-ratio:16/9;box-shadow:var(--shadow);touch-action:pan-y;max-width:100%}
 .compare img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;pointer-events:none;user-select:none;-webkit-user-drag:none}
 .compare .after{z-index:1}
 .compare .handle{position:absolute;top:0;bottom:0;width:2.75rem;transform:translateX(-50%);z-index:3;pointer-events:auto;touch-action:pan-x;cursor:ew-resize;border:0;padding:0;margin:0;appearance:none;-webkit-appearance:none;font:inherit;color:inherit;background:transparent}
@@ -276,8 +276,8 @@ footer a{color:var(--teal-l)}
     <div class="ba-grid">
       <figure class="compare-fig">
         <div class="compare" data-compare>
-          <img src="images/ba-carpet-before.webp" width="1000" height="625" alt="Worn carpet before professional cleaning" loading="lazy" decoding="async">
-          <img class="after" src="images/ba-carpet-after.webp" width="1000" height="625" alt="Freshly vacuumed rug after cleaning" loading="lazy" decoding="async">
+          <img src="images/ba-carpet-before.webp" width="1000" height="562" alt="Stained, matted beige living room carpet before cleaning" loading="lazy" decoding="async">
+          <img class="after" src="images/ba-carpet-after.webp" width="1000" height="562" alt="Same carpet looking fresh and even after deep cleaning" loading="lazy" decoding="async">
           <span class="compare-label before">Before</span><span class="compare-label after">After</span>
           <button type="button" class="handle" role="slider" aria-label="Compare carpet cleaning before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" value="50"></button>
         </div>
@@ -285,8 +285,8 @@ footer a{color:var(--teal-l)}
       </figure>
       <figure class="compare-fig">
         <div class="compare" data-compare>
-          <img src="images/ba-tile-before.webp" width="1000" height="625" alt="Bathroom tile and grout before cleaning" loading="lazy" decoding="async">
-          <img class="after" src="images/ba-tile-after.webp" width="1000" height="625" alt="Bright bathroom tile after deep cleaning" loading="lazy" decoding="async">
+          <img src="images/ba-tile-before.webp" width="1000" height="562" alt="Shower tile with dark mildewed grout and soap scum before cleaning" loading="lazy" decoding="async">
+          <img class="after" src="images/ba-tile-after.webp" width="1000" height="562" alt="Same shower corner with bright white grout after cleaning" loading="lazy" decoding="async">
           <span class="compare-label before">Before</span><span class="compare-label after">After</span>
           <button type="button" class="handle" role="slider" aria-label="Compare tile and grout before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" value="50"></button>
         </div>
@@ -294,8 +294,8 @@ footer a{color:var(--teal-l)}
       </figure>
       <figure class="compare-fig">
         <div class="compare" data-compare>
-          <img src="images/ba-upholstery-before.webp" width="1000" height="625" alt="Tufted sofa upholstery before cleaning" loading="lazy" decoding="async">
-          <img class="after" src="images/ba-upholstery-after.webp" width="1000" height="625" alt="Sofa cushions being professionally cleaned" loading="lazy" decoding="async">
+          <img src="images/ba-upholstery-before.webp" width="1000" height="562" alt="Cream sofa with stains and pet hair before cleaning" loading="lazy" decoding="async">
+          <img class="after" src="images/ba-upholstery-after.webp" width="1000" height="562" alt="Same cream sofa spotless after upholstery cleaning" loading="lazy" decoding="async">
           <span class="compare-label before">Before</span><span class="compare-label after">After</span>
           <button type="button" class="handle" role="slider" aria-label="Compare upholstery cleaning before and after" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50" value="50"></button>
         </div>
@@ -443,7 +443,7 @@ footer a{color:var(--teal-l)}
     var clamp = function(n){ return Math.max(0, Math.min(100, n)); };
     var set = function(v){
       percent = clamp(Number(v));
-      after.style.clipPath = 'inset(0 0 0 ' + percent + '%)';
+      after.style.clipPath = 'inset(0 0 0 ' + (100 - percent) + '%)';
       handle.style.left = percent + '%';
       handle.setAttribute('aria-valuenow', String(Math.round(percent)));
     };
