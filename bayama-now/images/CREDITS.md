@@ -10,12 +10,12 @@ All photos are from [Pexels](https://www.pexels.com) or [Unsplash](https://unspl
 | `service-upholstery.webp` | Handheld vacuum cleaning sofa cushions | Mohammad abasi | https://www.pexels.com/photo/efficient-sofa-cleaning-with-handheld-vacuum-30238384/ |
 | `service-tile.webp` | Spraying and cleaning bathroom wall tile | Liliana Drew | https://www.pexels.com/photo/person-spraying-a-tiles-9462635/ |
 | `service-duct.webp` | Ceiling HVAC ductwork and ventilation | Mikhail Nilov | https://www.pexels.com/photo/an-air-duct-of-a-building-8297856/ |
-| `ba-carpet-before.webp` | Worn carpet ready for replacement | Nataliya Markina | https://www.pexels.com/photo/rolled-dirty-carpet-outside-of-an-entrance-9739337/ |
-| `ba-carpet-after.webp` | Vacuuming area rug in a modern home | Liliana Drew | https://www.pexels.com/photo/a-person-cleaning-a-carpet-using-a-vacuum-cleaner-9462144/ |
-| `ba-tile-before.webp` | Cleaning stained bathroom tile and grout | Liliana Drew | https://www.pexels.com/photo/person-spraying-a-tiles-9462635/ |
-| `ba-tile-after.webp` | Spotless modern bathroom with tile floors | Pixabay | https://www.pexels.com/photo/photo-of-modern-bathroom-interior-1909791/ |
-| `ba-upholstery-before.webp` | Tufted sofa upholstery texture | Srattha Nualsate | https://www.pexels.com/photo/close-up-of-chesterfield-sofa-back-13005211/ |
-| `ba-upholstery-after.webp` | Professional sofa cushion cleaning | Mohammad abasi | https://www.pexels.com/photo/efficient-sofa-cleaning-with-handheld-vacuum-30238384/ |
+| `ba-carpet-before.webp` | Aligned before — stained beige living room carpet | Illustrative AI-generated sample | Replace with client's real job photo before launch |
+| `ba-carpet-after.webp` | Aligned after — same carpet cleaned | Illustrative AI-generated sample | Replace with client's real job photo before launch |
+| `ba-tile-before.webp` | Aligned before — mildewed shower grout | Illustrative AI-generated sample | Replace with client's real job photo before launch |
+| `ba-tile-after.webp` | Aligned after — same shower grout brightened | Illustrative AI-generated sample | Replace with client's real job photo before launch |
+| `ba-upholstery-before.webp` | Aligned before — stained cream sofa | Illustrative AI-generated sample | Replace with client's real job photo before launch |
+| `ba-upholstery-after.webp` | Aligned after — same sofa cleaned | Illustrative AI-generated sample | Replace with client's real job photo before launch |
 | `gallery-bathroom.webp` | Clean master bathroom interior | Pixabay | https://www.pexels.com/photo/photo-of-modern-bathroom-interior-1909791/ |
 | `gallery-bath-modern.webp` | Contemporary bathroom with shower and vanity | Sidekix Media | https://unsplash.com/photos/993a426fbf0a |
 | `gallery-kitchen.webp` | Polished kitchen with clean dishware | Jens Mahnke | https://www.pexels.com/photo/stainless-steel-fork-and-knives-on-chopping-board-4108710/ |
