@@ -75,7 +75,8 @@ h1,h2,h3{font-family:Outfit,system-ui,sans-serif;font-weight:700;letter-spacing:
 .skip{position:absolute;left:-9999px;top:0;z-index:100;padding:.75rem 1rem;background:var(--teal);color:#fff}
 .skip:focus{left:1rem;top:1rem}
 .wrap{max-width:1180px;margin:0 auto;padding:0 clamp(1rem,5vw,2.5rem);width:100%}
-.site-header{position:sticky;top:0;z-index:40;transition:background .25s,box-shadow .25s}
+.site-header{position:sticky;top:0;z-index:40;transition:background .25s,box-shadow .25s;width:100%}
+.site-header:not(.solid){background:transparent}
 .site-header nav{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:var(--nav-h);padding:.5rem clamp(1rem,5vw,2.5rem)}
 .site-header.solid{background:rgba(255,255,255,.97);backdrop-filter:blur(10px);box-shadow:0 1px 0 var(--line)}
 .site-header:not(.solid) nav{background:linear-gradient(180deg,rgba(15,23,42,.72),transparent)}
@@ -98,10 +99,10 @@ h1,h2,h3{font-family:Outfit,system-ui,sans-serif;font-weight:700;letter-spacing:
 .btn.call:hover{transform:translateY(-1px);box-shadow:0 12px 28px rgba(12,74,110,.5),0 0 0 1px rgba(255,255,255,.34) inset}
 .btn.call .call-ic{width:1.05rem;height:1.05rem;flex:0 0 auto;fill:currentColor;filter:drop-shadow(0 1px 1px rgba(15,23,42,.25))}
 .site-header.solid .btn.call{color:#fff}
-.hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero{position:relative;min-height:min(92vh,860px);display:flex;align-items:flex-end;color:#fff;overflow:hidden;margin-top:calc(-1 * var(--nav-h));z-index:1}
 .hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(100deg,rgba(15,23,42,.86) 0%,rgba(15,23,42,.62) 42%,rgba(12,74,110,.45) 100%)}
-.hero-content{position:relative;z-index:2;width:100%;padding:clamp(5rem,16vh,8rem) clamp(1rem,5vw,2.5rem) clamp(3rem,8vh,4.5rem)}
+.hero-content{position:relative;z-index:2;width:100%;padding:calc(var(--nav-h) + clamp(2.5rem,12vh,5rem)) clamp(1rem,5vw,2.5rem) clamp(3rem,8vh,4.5rem)}
 .eyebrow{display:inline-block;color:var(--teal-l);font-weight:700;font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;margin-bottom:.85rem}
 h1{font-size:clamp(2.35rem,6.5vw,4rem);line-height:1.06;margin-bottom:1rem;max-width:14ch}
 .lead{font-size:clamp(1.05rem,2.5vw,1.18rem);color:#e2e8f0;max-width:44ch}
@@ -202,21 +203,22 @@ footer a{color:var(--teal-l)}
       <a class="btn call" href="tel:+17023826569"><svg class="call-ic" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6.6 10.8c1.7 3.3 3.9 5.5 7.2 7.2l2.4-2.4c.3-.3.7-.4 1.1-.3 1.2.4 2.5.6 3.7.6.6 0 1.1.5 1.1 1.1V20c0 .6-.5 1.1-1.1 1.1C10.1 21.1 2.9 13.9 2.9 4.1 2.9 3.5 3.4 3 4 3h3.6c.6 0 1.1.5 1.1 1.1 0 1.2.2 2.5.6 3.7.1.4 0 .8-.3 1.1l-2.4 2.4z"/></svg> Call</a>
     </div>
   </nav>
-  <section class="hero" aria-label="Introduction">
-    <img class="hero-bg" src="images/hero.webp" width="1600" height="1067" alt="Sunlit, immaculately clean Las Vegas area living room" fetchpriority="high" decoding="async">
-    <div class="hero-overlay" aria-hidden="true"></div>
-    <div class="hero-content wrap">
-      <p class="eyebrow">Las Vegas home cleaning</p>
-      <h1>Your home, deeply clean — done right the first time.</h1>
-      <p class="lead">Bayama Now refreshes carpets, furniture, tile, air ducts, and driveways with eco-friendly methods that are safe for kids and pets.</p>
-      <div class="btns">
-        <a class="btn p" href="#quote">Get a Free Quote</a>
-        <a class="btn s" href="tel:+17023826569" aria-label="Call Bayama Now at 702-382-6569">📞 Call (702) 382-6569</a>
-      </div>
-      <p class="trust">Licensed &amp; insured · Same-week scheduling available · Upfront pricing before we start</p>
-    </div>
-  </section>
 </header>
+
+<section class="hero" aria-label="Introduction">
+  <img class="hero-bg" src="images/hero.webp" width="1600" height="1067" alt="Sunlit, immaculately clean Las Vegas area living room" fetchpriority="high" decoding="async">
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <div class="hero-content wrap">
+    <p class="eyebrow">Las Vegas home cleaning</p>
+    <h1>Your home, deeply clean — done right the first time.</h1>
+    <p class="lead">Bayama Now refreshes carpets, furniture, tile, air ducts, and driveways with eco-friendly methods that are safe for kids and pets.</p>
+    <div class="btns">
+      <a class="btn p" href="#quote">Get a Free Quote</a>
+      <a class="btn s" href="tel:+17023826569" aria-label="Call Bayama Now at 702-382-6569">📞 Call (702) 382-6569</a>
+    </div>
+    <p class="trust">Licensed &amp; insured · Same-week scheduling available · Upfront pricing before we start</p>
+  </div>
+</section>
 
 <div class="trust-bar reveal">
   <div class="wrap trust-items">
