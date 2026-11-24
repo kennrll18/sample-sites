@@ -161,8 +161,14 @@ input:focus,select:focus,textarea:focus{outline:2px solid var(--red);border-colo
 .quote-aside{background:linear-gradient(165deg,var(--red-d),var(--coal));color:#fef3c7;padding:2rem;border-radius:var(--radius)}
 .quote-aside h3{color:#fff;font-size:1.45rem;margin-bottom:.75rem}
 .quote-aside a{color:var(--amber);font-weight:700}
-.reveal{opacity:0;transform:translateY(20px);transition:opacity .65s ease,transform .65s ease}
-.reveal.is-visible{opacity:1;transform:none}
+.reveal{opacity:1;transform:none}
+@media(prefers-reduced-motion:no-preference){
+  .js .reveal.is-visible{animation:reveal-in .65s ease both}
+}
+@keyframes reveal-in{
+  from{transform:translateY(20px)}
+  to{transform:none}
+}
 .mobile-cta{position:fixed;left:0;right:0;bottom:0;z-index:45;display:none;gap:.55rem;padding:.55rem clamp(.75rem,4vw,1rem) calc(.55rem + env(safe-area-inset-bottom,0px));background:rgba(255,255,255,.97);border-top:1px solid var(--line);backdrop-filter:blur(8px);box-shadow:0 -10px 30px rgba(18,18,20,.08);pointer-events:auto;max-width:100vw}
 .mobile-cta .btn{flex:1;min-height:2.75rem;padding:.7rem 1rem;font-size:.88rem}
 footer{background:var(--ink);color:#a1a1aa;text-align:center;padding:2.25rem clamp(1rem,5vw,2.5rem) calc(2.25rem + var(--mobile-cta-h));font-size:.85rem}
@@ -204,7 +210,7 @@ footer a{color:var(--amber)}
 </header>
 
 <section class="hero" aria-label="Introduction">
-  <img class="hero-bg" src="images/hero.webp" width="1600" height="1067" alt="Technician inspecting a vehicle on a lift in an auto repair shop" fetchpriority="high" decoding="async">
+  <img class="hero-bg" src="images/hero.webp" width="1600" height="1067" alt="Mechanic repairing a vehicle inside a brightly lit auto workshop" fetchpriority="high" decoding="async">
   <div class="hero-overlay" aria-hidden="true"></div>
   <div class="hero-content wrap">
     <p class="eyebrow">Las Vegas · Nellis Blvd</p>
@@ -241,15 +247,15 @@ footer a{color:var(--amber)}
         <div class="svc-body"><h3>Dent repair &amp; removal</h3><p>Remove dings and dents from doors, panels, and bumpers without unnecessary replacement.</p></div>
       </article>
       <article class="svc">
-        <img src="images/service-frame.webp" width="1000" height="750" alt="Auto body worker sanding and preparing vehicle framework" loading="lazy" decoding="async">
+        <img src="images/service-frame.webp" width="1000" height="750" alt="Mechanic using a power grinder on auto body metalwork" loading="lazy" decoding="async">
         <div class="svc-body"><h3>Framework &amp; structural repair</h3><p>Automobile framework work so your vehicle is returned to safe, pre-accident alignment.</p></div>
       </article>
       <article class="svc">
-        <img src="images/service-paint.webp" width="1000" height="750" alt="Spray painting a car in a professional paint booth" loading="lazy" decoding="async">
+        <img src="images/service-paint.webp" width="1000" height="750" alt="Mechanic performing paint and body work on a vehicle" loading="lazy" decoding="async">
         <div class="svc-body"><h3>Cars &amp; paint jobs</h3><p>Complete refinish and custom paint — from spot repair to whole-vehicle color.</p></div>
       </article>
       <article class="svc">
-        <img src="images/service-parts.webp" width="1000" height="750" alt="New auto body parts ready for installation" loading="lazy" decoding="async">
+        <img src="images/service-parts.webp" width="1000" height="750" alt="Automotive engine parts organized on workshop shelves" loading="lazy" decoding="async">
         <div class="svc-body"><h3>Auto body part installation</h3><p>Replace damaged bumpers, panels, mirrors, and trim with precise fitment.</p></div>
       </article>
       <article class="svc">
@@ -257,7 +263,7 @@ footer a{color:var(--amber)}
         <div class="svc-body"><h3>Auto paint matching</h3><p>Blend new paint to your factory color for invisible repair lines.</p></div>
       </article>
       <article class="svc">
-        <img src="images/service-wrap.webp" width="1000" height="750" alt="Sleek red automobile with glossy finish after detailing" loading="lazy" decoding="async">
+        <img src="images/service-wrap.webp" width="1000" height="750" alt="Close-up of damaged bumper and body panel needing repair" loading="lazy" decoding="async">
         <div class="svc-body"><h3>Car wrap removal</h3><p>Remove vinyl wraps safely and restore the surface underneath for paint or resale.</p></div>
       </article>
     </div>
@@ -273,7 +279,7 @@ footer a{color:var(--amber)}
         <div class="pillar"><div class="em" aria-hidden="true">⚡</div><h3>Responsive team</h3><p>Contact by phone or email — the shop aims to reply within minutes.</p></div>
         <div class="pillar"><div class="em" aria-hidden="true">✅</div><h3>Clear estimates</h3><p>Discuss damage upfront so you know what to expect before work begins.</p></div>
       </div>
-      <img src="images/gallery-shop.webp" width="1200" height="800" alt="Mechanic working beside a vehicle in a body shop bay" loading="lazy" decoding="async" style="margin-top:2rem;border-radius:var(--radius);width:100%;max-height:420px;object-fit:cover;box-shadow:var(--shadow)">
+      <img src="images/gallery-shop.webp" width="1200" height="800" alt="Busy automobile workshop with parts and components laid out for repair" loading="lazy" decoding="async" style="margin-top:2rem;border-radius:var(--radius);width:100%;max-height:420px;object-fit:cover;box-shadow:var(--shadow)">
     </div>
   </section>
 
@@ -379,6 +385,7 @@ footer a{color:var(--amber)}
 </footer>
 
 <script>
+document.documentElement.classList.add('js');
 (function(){
   var header = document.getElementById('top');
   var onScroll = function(){
@@ -387,7 +394,11 @@ footer a{color:var(--amber)}
   onScroll();
   window.addEventListener('scroll', onScroll, {passive:true});
 
-  if ('IntersectionObserver' in window) {
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var reveals = document.querySelectorAll('.reveal');
+  if (reduceMotion) {
+    reveals.forEach(function(el){ el.classList.add('is-visible'); });
+  } else if ('IntersectionObserver' in window) {
     var io = new IntersectionObserver(function(entries){
       entries.forEach(function(e){
         if (e.isIntersecting) {
@@ -396,9 +407,9 @@ footer a{color:var(--amber)}
         }
       });
     }, {threshold:0.12, rootMargin:'0px 0px -40px 0px'});
-    document.querySelectorAll('.reveal').forEach(function(el){ io.observe(el); });
+    reveals.forEach(function(el){ io.observe(el); });
   } else {
-    document.querySelectorAll('.reveal').forEach(function(el){ el.classList.add('is-visible'); });
+    reveals.forEach(function(el){ el.classList.add('is-visible'); });
   }
 
   var form = document.getElementById('quote-form');
